@@ -1,0 +1,65 @@
+/* Trekking.css */
+.trekking-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .trek-card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trek-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .trek-details {
+    padding: 15px;
+  }
+  
+  .trek-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .trek-duration {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .trek-description {
+    margin-top: 10px;
+  }
+  
+  .trek-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .view-details-btn,
+  .watch-video-btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .watch-video-btn {
+    background-color: #e74c3c;
+  }
+  
+  /* Add additional styles as needed */
+  
