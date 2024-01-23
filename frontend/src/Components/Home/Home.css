@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
 }
 .home .Overlay {
   position: absolute;
@@ -192,4 +192,5 @@
   .home {
     height: 80vh;
   }
-}/*# sourceMappingURL=Home.css.map */
+}
+/* # sourceMappingURL=Home.css.map */

@@ -6,7 +6,6 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { TiThMenu } from 'react-icons/ti'; 
 import { Link, useNavigate } from 'react-router-dom';
 
-
 const Navbar = () => {
   const navigate = useNavigate();
   const [active, setActive] = useState('navBar');
@@ -28,10 +27,10 @@ const Navbar = () => {
   };
 
   return (
-    <section className='navBarSection'>
+    // <section className='navBarSection'>
       <header className='header flex'>
         <div className='logoDiv'>
-          <a href='/frontend/src/Components/Navbar' className='logo flex'>
+          <a href='/' className='logo flex'>
             <h1>
               <MdOutlineTravelExplore className='icon' /> ShaikhTravels.
             </h1>
@@ -113,7 +112,7 @@ const Navbar = () => {
           <TiThMenu className='icon' /> 
         </div>
       </header>
-    </section>
+    // </section>
   );
 };
 

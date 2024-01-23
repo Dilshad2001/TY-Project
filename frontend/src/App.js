@@ -6,14 +6,11 @@ import { Route, Routes } from 'react-router-dom';
 import home from './Components/Main Home/home';
 import SignUp from './Components/Authentication/SignUp/SignUp';
 import Packages from './Components/Packages/Packages';
-import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail component
+import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail Component
 import Trekking from './Components/Trekking/Trekking';
 import TrekDetails from './Components/Trekking/TrekDetails';
 import TripDetail from './Components/Main/TripDetail/TripDetail';
 import TripData from './Components/Main/TripDetail/TripData';
-
-
-
 
 const App = () =>  {
   return (
@@ -24,13 +21,12 @@ const App = () =>  {
       <Route path="/" exact Component={home} />
       <Route path="/login" Component={Login} />
       <Route path="/register" Component={SignUp} />
-      <Route path="/packages" element={<Packages />} />
-      <Route path="/package/:id" element={<PackageDetail />} />
-      <Route path='/Trekking' element={<Trekking/>}/>
-      <Route path='/Trekdetails/:id' element={<TrekDetails/>}/>
-      <Route path='/Trip/:id' component={TripDetail} />
-      <Route path="/TripData" element={<TripData />} />
-
+      <Route path="/packages" Component={<Packages />} />
+      <Route path="/package/:id" Component={<PackageDetail />} />
+      <Route path='/Trekking' Component={<Trekking/>}/>
+      <Route path='/Trekdetails/:id' Component={<TrekDetails/>}/>
+      <Route path='/trip/:id' Component={<TripDetail />} />
+      <Route path="/TripData" Component={<TripData />} />
 
     </Routes>
 

@@ -4,16 +4,16 @@ import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import { Link } from 'react-router-dom';
 
-import img from '../../Assets/Main Assets/Goa img1.jpg'
-import img2 from'../../Assets/Main Assets/Agra img2.jpg'
-import img3 from '../../Assets/Main Assets/Manali waterfall img3.jpg'
-import img4 from '../../Assets/Main Assets/Shimla img4.jpg'
-import img5 from '../../Assets/Main Assets/Sikkim img5.jpg'
-import img6 from '../../Assets/Main Assets/Jaisalmer img6.jpeg'
-import img7 from '../../Assets/Main Assets/Amritsar img7.jpg'
-import img8 from '../../Assets/Main Assets/jaipur jal img8.jpg'
-import img9 from '../../Assets/Main Assets/img9.jpg'
-import img10 from '../../Assets/Main Assets/kerla img10.jpg'
+import img from '../../Assets/Main-Assets/Goa img1.jpg'
+import img2 from'../../Assets/Main-Assets/Agra img2.jpg'
+import img3 from '../../Assets/Main-Assets/Manali waterfall img3.jpg'
+import img4 from '../../Assets/Main-Assets/Shimla img4.jpg'
+import img5 from '../../Assets/Main-Assets/Sikkim img5.jpg'
+import img6 from '../../Assets/Main-Assets/Jaisalmer img6.jpeg'
+import img7 from '../../Assets/Main-Assets/Amritsar img7.jpg'
+import img8 from '../../Assets/Main-Assets/jaipur jal img8.jpg'
+import img9 from '../../Assets/Main-Assets/img9.jpg'
+import img10 from '../../Assets/Main-Assets/kerla img10.jpg'
 
 import TripDetail from './TripDetail/TripDetail'
 
@@ -139,7 +139,6 @@ import 'aos/dist/aos.css'
 const Main = () => {
   useEffect(()=>{
     Aos.init({duration:2000})
-
   },[]);
 
 
@@ -156,13 +155,11 @@ const Main = () => {
     {
       Data.map(({id ,imgSrc , destTitle, location, grade, fees, description })=>{
         return (
-          
 
           <div key={id} data-aos='fade-up' className='singleDestination'>
             <div className="imageDiv">
               <img src={imgSrc} alt={destTitle} />
             </div>
-
 
             <div className='cardInfo'>
               <h4 className='destTitle'>{destTitle}</h4>

@@ -1,3 +1,9 @@
+/* Its for Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -26,7 +32,6 @@
 
 html{
   scroll-behavior: smooth;
-
 }
 
 a{
@@ -96,8 +101,8 @@ body{
 
 @media screen and (min-width:1240px) {
   .container{
-    width: 80% !important;
-    margin: auto !important;
+    /* width: 80%; */
+    margin: 0 auto;
   }
 
   .section{
@@ -108,7 +113,6 @@ body{
 @media screen and ( min-width: 2560px) { 
   body{
     zoom: 1.7;
-
   }
   
 }

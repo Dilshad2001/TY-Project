@@ -1,6 +1,6 @@
 // Main.js or a separate data file
 
-import img from '../../../Assets/Main Assets/Goa img1.jpg'
+import img from '../../../Assets/Main-Assets/Goa img1.jpg'
 //import img2 from'../../Assets/Main Assets/Agra img2.jpg'
 //import img3 from '../../Assets/Main Assets/Manali waterfall img3.jpg'
 //import img4 from '../../Assets/Main Assets/Shimla img4.jpg'

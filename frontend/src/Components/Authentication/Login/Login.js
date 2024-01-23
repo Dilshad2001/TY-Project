@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import './Login.scss';
 import { Link, useNavigate } from 'react-router-dom'; // Removed unnecessary NavLink imports
 
-import Loginbackgroundimg from '../../../Assets/Main Assets/Loginbackgroungimg.jpg'
-import LoginLogo  from '../../../Assets/Main Assets/LoginLogo.png'; // Fixed the import statement
+import { MdOutlineTravelExplore } from 'react-icons/md';
 
-import { FaUserShield } from 'react-icons/fa';
-import { BsFillShieldLockFill } from 'react-icons/bs';
-import { AiOutlineSwapRight } from 'react-icons/ai';
+import Loginbackgroundimg from '../../../Assets/Main-Assets/Login-bg-img.jpg'
+// import LoginLogo  from '../../../Assets/Main Assets/LoginLogo.png'; // Fixed the import statement
+
 import { useToast } from '@chakra-ui/toast';
 import axios from 'axios';
 
@@ -68,67 +67,87 @@ const Login = () => {
     }
   };
 
-
   return (
     <div className="LoginPage flex">
       <div className="container flex">
-
-        <div className='singleDestination'>
-          <div className="imageDiv">
-            {/* You can add an image here */}
-            <img src={Loginbackgroundimg} alt='Loginbackgroungimg image'/>
-          </div>
-
-          <div className='textDiv'>
-            <h2 className='title'>Let's start your journey with Shaikh Travelers</h2>
-            <p>Enjoy the peace of Nature!</p>
-          </div>
-
-          <div className='footerDiv flex'>
-            <span className='text'>Don't have an account? </span>
-            <Link to='/register'>
-              <button className='btn'>Sign Up</button>
-            </Link>
-          </div>
-        </div>
-
         <div className='formDiv flex'>
           <div className='headerDiv'>
-            <img src={LoginLogo} alt='LoginLogo image' />
-            <h3>Welcome Back User!</h3>
+            {/* <img src={} alt='LoginLogo image' /> */}
+            <h3 className='text-xl text-white'>Welcome Back User!</h3>
+          </div>
+        </div>
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-4 lg:px-8 bg-gray-100">
+          <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+          <a href='/' className='logo flex'>
+            <h1>
+              <MdOutlineTravelExplore className='icon' /> ShaikhTravels.
+            </h1>
+          </a>
+            <h2 className="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+              Sign in to your account
+            </h2>
           </div>
 
-          <form action='' className='form grid'>
-            <span>Login here</span>
-
-            <div className='inputDiv'>
-              <label htmlFor='username'>Email</label>
-              <div className='input flex'>
-                <FaUserShield className='icon' />
-                <input type='text' id='username' placeholder='Enter Username' onChange={(e) => setEmail(e.target.value)}/>
+          <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Email address
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    required
+                    onChange={(e)=>setEmail(e.target.value)}
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className='inputDiv'>
-              <label htmlFor='password'>Password</label>
-              <div className='input flex'>
-                <BsFillShieldLockFill className='icon' />
-                <input type='password' id='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)}/>
+              <div>
+                <div className="flex items-center justify-between">
+                  <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                    Password
+                  </label>
+                  <div className="text-sm">
+                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                      Forgot password?
+                    </a>
+                  </div>
+                </div>
+                <div className="mt-2">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autoComplete="current-password"
+                    onChange={(e)=>setPassword(e.target.value)}
+                    required
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
               </div>
-            </div>
+              <div>
+                <button
+                  type="submit"
+                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Sign in
+                </button>
+              </div>
+            </form>
 
-            <button type='submit' className='btn flex' onClick={submitHandler}>
-              <span>Login</span>
-              <AiOutlineSwapRight className='icon' />
-            </button>
-
-            <span className='forgetPassword'>
-              Forgot your password? <a href='/forget-password'>Click Here</a>
-            </span>
-
-          </form>
+            <p className="mt-10 text-center text-sm text-gray-500">
+              Not a member?{' '}
+              <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                Sign Up
+              </a>
+            </p>
+          </div>
         </div>
-
       </div>
     </div>
   );
