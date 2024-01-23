@@ -84,12 +84,6 @@ const Navbar = () => {
               </button>
             )}
 
-            {/* <button className='btn'>
-              <Link to='/login' className='login'>
-                Login
-              </Link>
-            </button> */}
-
             <button className='btn'>
               <a href='/book' className='Book Now'>
                 Book Now

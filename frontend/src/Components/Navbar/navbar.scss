@@ -30,14 +30,21 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
-        
+
         .icon{
             font-size: 25px;
             color: var(--PrimaryColor);
             transform: translateY(5px);
 
         }
-
+    }
+    ul {
+        button {
+            border-radius: 5px;
+            background-color: rgba(0, 0, 255, 0.578);
+            font-size: 1.5rems;
+            justify-content: center;
+        }
     }
 
     @media  screen and (max-width:786px) {
