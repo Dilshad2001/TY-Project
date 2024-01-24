@@ -94,12 +94,12 @@ const SignUp = () => {
             </h1>
           </a>
             <h2 className="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Sign up for new account
+              Create new account
             </h2>
           </div>
 
           <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-2">
+            <form className="space-y-2" onSubmit={submitHandler}>
             <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Username
@@ -170,14 +170,14 @@ const SignUp = () => {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Sign in
+                  Create
                 </button>
               </div>
             </form>
 
             <p className="mt-4 text-center text-sm text-gray-500">
               Already Registered?{' '}
-              <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              <a href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Log in
               </a>
             </p>

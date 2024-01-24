@@ -21,12 +21,12 @@ const App = () =>  {
       <Route path="/" exact Component={home} />
       <Route path="/login" Component={Login} />
       <Route path="/register" Component={SignUp} />
-      <Route path="/packages" Component={<Packages />} />
-      <Route path="/package/:id" Component={<PackageDetail />} />
-      <Route path='/Trekking' Component={<Trekking/>}/>
-      <Route path='/Trekdetails/:id' Component={<TrekDetails/>}/>
-      <Route path='/trip/:id' Component={<TripDetail />} />
-      <Route path="/TripData" Component={<TripData />} />
+      <Route path="/packages" element={<Packages />} />
+      <Route path="/package/:id" element={<PackageDetail />} />
+      <Route path='/Trekking' element={<Trekking/>}/>
+      <Route path='/Trekdetails/:id' element={<TrekDetails/>}/>
+      <Route path='/trip/:id' element={<TripDetail />} />
+      <Route path="/TripData" element={<TripData />} />
 
     </Routes>
 
