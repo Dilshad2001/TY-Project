@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import './Home.css'
-import './Home.scss'
-import './Home.css.map'
+
 import video from '../../Assets/Main-Assets/home-video.mp4'
 import {GrLocation} from 'react-icons/gr'
 import {FiFacebook} from 'react-icons/fi'
@@ -14,8 +13,19 @@ import {TbApps} from 'react-icons/tb'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import { FaBus } from 'react-icons/fa6';
+import { IoTrain } from "react-icons/io5";
+import { IoMdAirplane } from "react-icons/io";
+
+
+
+
+
+
+
 const Home = () => {
   /*===========================================================*/
+  const [searchHistory, setSearchHistory] = useState([]);
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
@@ -50,10 +60,30 @@ const Home = () => {
   };
 
     /*===========================================================*/
+    const handleIconClick = (iconType) => {
+      switch (iconType) {
+        case 'Bus':
+          // Change history.push('/bus-packages') to setSearchHistory([...searchHistory, '/bus-packages']);
+          setSearchHistory([...searchHistory, '/Bus-packages']);
+          break;
+        case 'train':
+          // Change history.push('/train-packages') to setSearchHistory([...searchHistory, '/train-packages']);
+          setSearchHistory([...searchHistory, '/train-packages']);
+          break;
+        case 'airplane':
+          // Change history.push('/airplane-packages') to setSearchHistory([...searchHistory, '/airplane-packages']);
+          setSearchHistory([...searchHistory, '/airplane-packages']);
+          break;
+        default:
+          break;
+      }
+    };
+  
 
 
   return (
     <section className='home'>
+    
       <div className="overlay"></div>
       <video src={video} muted autoPlay loop type="video/mp4"></video>
 
@@ -142,6 +172,21 @@ const Home = () => {
 
           </div>
         </div>
+      </div>
+      <div>
+    {/* New icons for bus, train, and airplane */}
+        <FaBus
+          className='icon'
+          onClick={() => handleIconClick('bus')}
+        />
+        <IoTrain 
+          className='icon'
+          onClick={() => handleIconClick('train')}
+        />
+        <IoMdAirplane
+          className='icon'
+          onClick={() => handleIconClick('airplane')}
+        />
       </div>
 
 

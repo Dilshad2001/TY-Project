@@ -1,65 +1,76 @@
-/* Trekking.css */
+/* TrekkingPage.css */
+
+/* Include Packages.css for shared styles */
+
+/* Additional styles for trekking page */
 .trekking-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  
-  .trek-card {
-    width: 300px;
-    margin: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .trek-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .trek-details {
-    padding: 15px;
-  }
-  
-  .trek-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .trek-duration {
-    font-size: 1em;
-    color: #555;
-  }
-  
-  .trek-description {
-    margin-top: 10px;
-  }
-  
-  .trek-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-  
-  .view-details-btn,
-  .watch-video-btn {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .watch-video-btn {
-    background-color: #e74c3c;
-  }
-  
-  /* Add additional styles as needed */
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.trekking-card {
+  width: 300px;
+  margin: 20px;
+  background-color: #f8f8f8; /* Change background color */
+  border: 1px solid #ccc; /* Change border color */
+  border-radius: 8px; /* Adjust border-radius */
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.trekking-image {
+  width: 100%;
+  height: 200px; /* Adjust height */
+  object-fit: cover;
+}
+
+.trekking-details {
+  padding: 15px;
+}
+
+.trekking-title {
+  font-size: 1.4em; /* Increase font size */
+  font-weight: bold;
+  margin-bottom: 15px; /* Adjust margin */
+}
+
+.trekking-price {
+  color: #e74c3c; /* Change price color */
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.trekking-description {
+  margin-top: 15px; /* Adjust margin */
+}
+
+/* Additional styles for trekking dropdown */
+.trekking-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.trekking-dropdown-btn {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.trekking-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.trekking-dropdown-option {
+  padding: 14px 18px;
+  display: block;
+}
+
+.trekking-dropdown:hover .trekking-dropdown-content {
+  display: block;
+}

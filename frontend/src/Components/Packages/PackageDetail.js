@@ -2,12 +2,19 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { packagesData } from '../../Components/Packages/PackageData';
+
+import { packagesTravlling, packagesRafting, packagesTrekking, packagesHotels} from '../../Components/Packages/PackageData';
 
 
 const PackageDetail = () => {
   const { id } = useParams(); // Get the package ID from the URL
-  const packageItem = packagesData.find((item) => item.id === parseInt(id));
+    // Combine all packages into a single array
+  const allPackages = [...packagesTravlling, ...packagesRafting, ...packagesTrekking,...packagesHotels];
+  const packageItem = allPackages.find((item) => item.id === parseInt(id));
+
+  console.log('ID:', id);
+  console.log('All Packages:', allPackages);
+  console.log('Package Item:', packageItem);
 
   const [bookingInfo, setBookingInfo] = useState({
     name: '',
@@ -19,7 +26,7 @@ const PackageDetail = () => {
 
   const [confirmationVisible, setConfirmationVisible] = useState(false);
 
-  let totalAmount; // Declare totalAmount in the component's scope
+  let totalAmount =0; // Declare totalAmount in the component's scope
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -49,7 +56,12 @@ const PackageDetail = () => {
           />
           <div className="package-details">
             <div className="package-price">{packageItem.price}</div>
+            <div className="package-location">{packageItem.location}</div>
+            <div className="package-itinerary">{packageItem.itinerary}</div>
+
             <div className="package-description">{packageItem.description}</div>
+            <div className="package-duration">{packageItem.duration}</div>
+          
           </div>
           <div className="booking-form">
             <h3>Book this Package</h3>

@@ -6,7 +6,7 @@ import TrekkingData from './TrekingData';
 const Trekking = () => {
   return (
     <div>
-      <h2>Trekking Page</h2>
+      <h2>Welcome to ShaikhTrekkings !</h2>
       {TrekkingData.map((trek) => (
         <div key={trek.id}>
           <img src={trek.imgSrc} alt={trek.destTitle} />
