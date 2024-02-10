@@ -54,7 +54,7 @@ const packagesTravlling = [
     title:'Goa Beach Paradise',
     location:'Goa',
     grade:'BEACH RELAX',
-    fees:'₹15,000',
+    price:'₹15,000',
     description:'the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s'
   },
  {
@@ -63,7 +63,7 @@ const packagesTravlling = [
     title:'Taj Mahal',
     location:'Agra',
     grade:'CULTURAL RELAX',
-    fees:'₹25,000',
+    price:'₹25,000',
     description:'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.'
     
   },
@@ -74,7 +74,7 @@ const packagesTravlling = [
     title:'Jogni Waterfall Road',
     location:' Manali',
     grade:'CULTURAL RELAX',
-    fees:'₹30,000',
+    price:'₹30,000',
     description:'Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.' ,
     
   },
@@ -86,7 +86,7 @@ const packagesTravlling = [
     title:'Shaily Peak',
     location:'Shimla',
     grade:'CULTURAL RELAX',
-    fees:'₹35,237',
+    price:'₹35,237',
     description:'Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.',
     
   },
@@ -97,7 +97,7 @@ const packagesTravlling = [
     title:'Buddha Park',
     location:'Sikkim',
     grade:'CULTURAL RELAX',
-    fees:'₹40,000',
+    price:'₹40,000',
     description:'The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.',
 
     
@@ -108,7 +108,7 @@ const packagesTravlling = [
     title:'Bada Bagh ',
     location:' Jaisalmer',
     grade:'CULTURAL RELAX',
-    fees:'₹45,000',
+    price:'₹45,000',
     description:'This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.',
     
   },
@@ -120,7 +120,7 @@ const packagesTravlling = [
     title:'Golden Temple',
     location:'Amritsar',
     grade:'CULTURAL RELAX',
-    fees:'₹50,000',
+    price:'₹50,000',
     description:'Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.',
     
   },
@@ -132,7 +132,7 @@ const packagesTravlling = [
     title:'Jal Mahal',
     location:'Jaipur',
     grade:'CULTURAL RELAX',
-    fees:'₹55,000',
+    price:'₹55,000',
     description:'Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber',
     
   },
@@ -618,7 +618,6 @@ const PackageCard = ({ packageItem }) => {
           <div className="package-location">{packageItem.location}</div>
           <div className="package-price">{packageItem.price}</div>
           <div className="package-duration">{packageItem.duration}</div>
-          <div className="package-itinerary">{packageItem.itinerary}</div>
           <div className="package-description">{packageItem.description}</div>
         </div>
       </div>

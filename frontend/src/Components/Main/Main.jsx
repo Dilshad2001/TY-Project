@@ -27,7 +27,7 @@ import 'aos/dist/aos.css'
     destTitle:'Goa Beach Paradise',
     location:'Goa',
     grade:'BEACH RELAX',
-    fees:'₹8000',
+    price:'₹8000',
     description:'the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s'    
   },
 
@@ -37,7 +37,7 @@ import 'aos/dist/aos.css'
     destTitle:'Taj Mahal',
     location:'Agra',
     grade:'CULTURAL RELAX',
-    fees:'₹25,000',
+    price:'₹25,000',
     description:'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.'
     
   },
@@ -48,7 +48,7 @@ import 'aos/dist/aos.css'
     destTitle:'Jogni Waterfall Road',
     location:' Manali',
     grade:'CULTURAL RELAX',
-    fees:'₹30,000',
+    price:'₹30,000',
     description:'Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.' ,
     
   },
@@ -60,7 +60,7 @@ import 'aos/dist/aos.css'
     destTitle:'Shaily Peak',
     location:'Shimla',
     grade:'CULTURAL RELAX',
-    fees:'₹35,237',
+    price:'₹35,237',
     description:'Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.',
     
   },
@@ -71,7 +71,7 @@ import 'aos/dist/aos.css'
     destTitle:'Buddha Park',
     location:'Sikkim',
     grade:'CULTURAL RELAX',
-    fees:'₹40,000',
+    price:'₹40,000',
     description:'The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.',
 
     
@@ -84,7 +84,7 @@ import 'aos/dist/aos.css'
     destTitle:'Bada Bagh ',
     location:' Jaisalmer',
     grade:'CULTURAL RELAX',
-    fees:'₹45,000',
+    price:'₹45,000',
     description:'This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.',
     
   },
@@ -96,7 +96,7 @@ import 'aos/dist/aos.css'
     destTitle:'Golden Temple',
     location:'Amritsar',
     grade:'CULTURAL RELAX',
-    fees:'₹50,000',
+    price:'₹50,000',
     description:'Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.',
     
   },
@@ -108,7 +108,7 @@ import 'aos/dist/aos.css'
     destTitle:'Jal Mahal',
     location:'Jaipur',
     grade:'CULTURAL RELAX',
-    fees:'₹55,000',
+    price:'₹55,000',
     description:'Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber',
     
   },
@@ -119,7 +119,7 @@ import 'aos/dist/aos.css'
     destTitle:'Ladakh',
     location:'Himachal Pradesh',
     grade:'CULTURAL RELAX',
-    fees:'₹70,000',
+    price:'₹70,000',
     description:'A road trip through this enchanted land will have you cruising upon some of the highest motorable passes in the world while basking in the warm tranquility of postcard-pretty Tibetan Buddhist monasteries that cast a shadow upon a landscape that displays only the best that nature ',
     
   },
@@ -130,7 +130,7 @@ import 'aos/dist/aos.css'
     destTitle:'kumarakom ',
     location:'Kerla',
     grade:'CULTURAL RELAX',
-    fees:'₹60,500',
+    price:'₹60,500',
     description:'Kumarakom is an unbelievably beautiful paradise of mangrove forests, emerald green paddy fields and coconut groves interspersed with enchanting waterways and canals adorned with white lilies.',
     
   },

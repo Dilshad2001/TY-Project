@@ -1,6 +1,9 @@
 // PackageDetail.js
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './PackageDetail.css';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 
 import { packagesTravlling, packagesRafting, packagesTrekking, packagesHotels} from '../../Components/Packages/PackageData';
@@ -9,12 +12,13 @@ import { packagesTravlling, packagesRafting, packagesTrekking, packagesHotels} f
 const PackageDetail = () => {
   const { id } = useParams(); // Get the package ID from the URL
     // Combine all packages into a single array
-  const allPackages = [...packagesTravlling, ...packagesRafting, ...packagesTrekking,...packagesHotels];
+    const allPackages = [
+      ...packagesTravlling.map((item) => ({ ...item, type: 'travelling' })),
+      ...packagesRafting.map((item) => ({ ...item, type: 'rafting' })),
+      ...packagesTrekking.map((item) => ({ ...item, type: 'trekking' })),
+      ...packagesHotels.map((item) => ({ ...item, type: 'hotels' })),
+    ];
   const packageItem = allPackages.find((item) => item.id === parseInt(id));
-
-  console.log('ID:', id);
-  console.log('All Packages:', allPackages);
-  console.log('Package Item:', packageItem);
 
   const [bookingInfo, setBookingInfo] = useState({
     name: '',
@@ -25,8 +29,9 @@ const PackageDetail = () => {
   });
 
   const [confirmationVisible, setConfirmationVisible] = useState(false);
+  const [totalAmount, setTotalAmount] = useState(0); // Declare totalAmount in the component's state
 
-  let totalAmount =0; // Declare totalAmount in the component's scope
+  //let totalAmount =0; // Declare totalAmount in the component's scope
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -34,15 +39,35 @@ const PackageDetail = () => {
   };
 
   const handleBooking = () => {
-    // Handle the booking logic, e.g., calculate total amount, show confirmation, etc.
-    const totalAmount = packageItem.price * bookingInfo.numberOfPeople;
+     // Form validation
+     if (!bookingInfo.name || !bookingInfo.email || !bookingInfo.phone || !bookingInfo.monthOfTravel) {
+      alert('Please fill in all the required fields.');
+      return;
+    }
+    const calculatedTotalAmount = packageItem.price * bookingInfo.numberOfPeople;
+    setTotalAmount(calculatedTotalAmount);
 
-    // For simplicity, just logging the booking info in this example
-    console.log('Booking Info:', bookingInfo);
-    console.log('Total Amount:', totalAmount);
-// Set the confirmation message visibility to true
-    setConfirmationVisible(true);
-  };
+    // Display the confirmation message
+      setConfirmationVisible(true);
+    };
+  
+    const closeConfirmation = () => {
+      // Close the confirmation message
+      setConfirmationVisible(false);
+    };
+    const handleDateChange = (date) => {
+      // Your validation logic here to check if the date is within the next 15 days
+      const currentDate = new Date();
+      const fifteenDaysFromNow = new Date();
+      fifteenDaysFromNow.setDate(currentDate.getDate() + 15);
+
+      if (date >= currentDate && date <= fifteenDaysFromNow) {
+        setBookingInfo((prevInfo) => ({ ...prevInfo, monthOfTravel: date }));
+      } else {
+        // Handle invalid date (show error message, etc.)
+        console.error('Invalid date selection');
+      }
+    };
 
   return (
     <div className="package-detail-container">
@@ -58,7 +83,7 @@ const PackageDetail = () => {
             <div className="package-price">{packageItem.price}</div>
             <div className="package-location">{packageItem.location}</div>
             <div className="package-itinerary">{packageItem.itinerary}</div>
-
+            
             <div className="package-description">{packageItem.description}</div>
             <div className="package-duration">{packageItem.duration}</div>
           
@@ -94,20 +119,23 @@ const PackageDetail = () => {
                 value={bookingInfo.numberOfPeople}
                 onChange={handleInputChange}
               />
-              <label>Month of Travel:</label>
-              <input
-                type="text"
-                name="monthOfTravel"
-                value={bookingInfo.monthOfTravel}
-                onChange={handleInputChange}
-              />
+              
+                  <div className="date-picker-container">
+                <label>Month of Travel:</label>
+                <DatePicker
+                  selected={bookingInfo.monthOfTravel}
+                  onChange={handleDateChange}
+                  minDate={new Date()}
+                  maxDate={new Date(new Date().setDate(new Date().getDate() + 15))}
+                  dateFormat="yyyy-MM-dd"
+                />
+              </div>
               <button type="button" onClick={handleBooking}>
-                Pay Now
+                RegisterNow
               </button>
             </form>
           </div>
-          {confirmationVisible && (
-            <div className="confirmation-message">
+          <div className="confirmation-message" style={{ display: confirmationVisible ? 'block' : 'none' }}>
               <p>Thank you for booking {packageItem.title}!</p>
               <p>Your booking details:</p>
               <p>Name: {bookingInfo.name}</p>
@@ -115,10 +143,11 @@ const PackageDetail = () => {
               <p>Phone: {bookingInfo.phone}</p>
               <p>Number of People: {bookingInfo.numberOfPeople}</p>
               <p>Month of Travel: {bookingInfo.monthOfTravel}</p>
-              <p>Total Amount: ${totalAmount}</p>
+              <p>Total Amount: ₹{totalAmount}</p>
+              <button type="button" onClick={closeConfirmation}>
+              Close
+            </button>
             </div>
-            )}
-
         </>
       )}
     </div>
