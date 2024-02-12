@@ -137,3 +137,18 @@
   background-color: hsl(187, 83%, 54%);
   ;
 }
+
+@media screen and (max-width: 700px) {
+  .singleDestination {
+    width: 49%;
+  }
+  .secContent-grid {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .singleDestination {
+    width: 100%;
+  }
+}

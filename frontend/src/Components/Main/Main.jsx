@@ -52,8 +52,6 @@ const Data = [
     description: 'Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.',
 
   },
-
-
   {
     id: 4,
     imgSrc: img4,
@@ -100,8 +98,6 @@ const Data = [
     description: 'Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.',
 
   },
-
-
   {
     id: 8,
     imgSrc: img8,
@@ -188,7 +184,6 @@ const Main = () => {
                   DETAILS <HiOutlineClipboardCheck className='icon' />
                 </Link>
               </div>
-
             );
           })
         }
