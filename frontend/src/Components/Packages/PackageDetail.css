@@ -6,6 +6,11 @@
     border-radius: 8px;
     max-width: 600px;
     margin: auto;
+    h2 {
+      font-weight: bold;
+      color: black;
+    
+    }
   }
   
   .confirmation-message {
@@ -32,6 +37,11 @@
   
 .booking-form {
     margin-top: 20px;
+    h3 {
+      font-weight: bold;
+      color: rgb(27, 197, 194);
+      
+    }
   }
   
   .booking-form label {

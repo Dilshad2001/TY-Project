@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import './Home.css'
+import './Home.scss'
 
 import video from '../../Assets/Main-Assets/home-video.mp4'
 import {GrLocation} from 'react-icons/gr'
@@ -16,12 +16,6 @@ import 'aos/dist/aos.css'
 import { FaBus } from 'react-icons/fa6';
 import { IoTrain } from "react-icons/io5";
 import { IoMdAirplane } from "react-icons/io";
-
-
-
-
-
-
 
 const Home = () => {
   /*===========================================================*/
@@ -42,11 +36,11 @@ const Home = () => {
   const handleSearch = () => {
     // Mock data for destinations
     const destinations = [
-      'dubai',
-      'New York',
-      'manali',
-      'London',
-      'Sydney',
+      'Goa',
+      'TAj Mahal',
+      'Jogni Waterfall Road',
+      'Shaily Peak',
+      'Buddha Park',
       // ... add more destinations as needed
     ];
 

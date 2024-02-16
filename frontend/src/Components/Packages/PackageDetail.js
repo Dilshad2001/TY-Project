@@ -6,17 +6,33 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-import { packagesTravlling, packagesRafting, packagesTrekking, packagesHotels} from '../../Components/Packages/PackageData';
+import { packagesTravelling, packagesRafting, packagesTrekking, packagesHotels, packagesBus, packagesTrain, packagesFlight} from '../../Components/Packages/PackageData';
+
+const renderDetails = (details) => {
+  return details.map((detail, index) => (
+    <div key={index}>
+      {detail.day && <div><strong>Day:</strong> {detail.day}</div>}
+      {detail.details && (
+        <div>
+          <strong>Details:</strong> {Array.isArray(detail.details) ? renderDetails(detail.details) : detail.details}
+        </div>
+      )}
+    </div>
+  ));
+};
 
 
 const PackageDetail = () => {
   const { id } = useParams(); // Get the package ID from the URL
     // Combine all packages into a single array
     const allPackages = [
-      ...packagesTravlling.map((item) => ({ ...item, type: 'travelling' })),
+      ...packagesTravelling.map((item) => ({ ...item, type: 'travelling' })),
       ...packagesRafting.map((item) => ({ ...item, type: 'rafting' })),
       ...packagesTrekking.map((item) => ({ ...item, type: 'trekking' })),
       ...packagesHotels.map((item) => ({ ...item, type: 'hotels' })),
+      ...packagesBus.map((item) => ({ ...item, type: 'Bus' })),
+      ...packagesTrain.map((item) => ({ ...item, type: 'Train' })),
+      ...packagesFlight.map((item) => ({ ...item, type: 'Flight' })),
     ];
   const packageItem = allPackages.find((item) => item.id === parseInt(id));
 
@@ -74,20 +90,24 @@ const PackageDetail = () => {
       {packageItem && (
         <>
           <h2>{packageItem.title}</h2>
-          <img
-            className="package-image"
-            src={packageItem.image}
-            alt={packageItem.title}
-          />
+          <img className="package-image" src={packageItem.image} alt={packageItem.title} />
           <div className="package-details">
             <div className="package-price">{packageItem.price}</div>
             <div className="package-location">{packageItem.location}</div>
-            <div className="package-itinerary">{packageItem.itinerary}</div>
-            
+            <div className="package-itinerary">{packageItem.itinerary}</div>      
             <div className="package-description">{packageItem.description}</div>
             <div className="package-duration">{packageItem.duration}</div>
-          
           </div>
+
+          <div className="additional-details"> 
+          {packageItem.details && (
+            <>
+            {renderDetails(packageItem.details)}
+            </>
+            )}
+            </div>
+
+
           <div className="booking-form">
             <h3>Book this Package</h3>
             <form>

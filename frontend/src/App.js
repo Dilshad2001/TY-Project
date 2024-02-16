@@ -8,9 +8,8 @@ import SignUp from './Components/Authentication/SignUp/SignUp';
 import Packages from './Components/Packages/Packages';
 import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail Component
 import Trekking from './Components/Trekking/Trekking';
-import TrekDetails from './Components/Trekking/TrekDetails';
-import TripDetail from './Components/Main/TripDetail/TripDetail';
-import TripData from './Components/Main/TripDetail/TripData';
+
+
 
 const App = () =>  {
   return (
@@ -24,9 +23,8 @@ const App = () =>  {
       <Route path="/packages" element={<Packages />} />
       <Route path="/package/:id" element={<PackageDetail />} />
       <Route path='/Trekking' element={<Trekking/>}/>
-      <Route path='/Trekdetails/:id' element={<TrekDetails/>}/>
-      <Route path='/trip/:id' element={<TripDetail />} />
-      <Route path="/TripData" element={<TripData />} />
+      
+      
 
     </Routes>
 

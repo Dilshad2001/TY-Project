@@ -36,8 +36,35 @@ import imgHotels29 from '../../Assets/Hotels Assets/Hotels sikkim.jpg'
 import imgHotels30 from '../../Assets/Hotels Assets/Hotels Jaisalmer.jpg'
 import imgHotels31 from '../../Assets/Hotels Assets/Hotels Amritsar.jpg'
 import imgHotels32 from '../../Assets/Hotels Assets/Hotels jaipur.jpg'
+//Bus Packages imports
+import imgBusPackges33 from '../../Assets/Bus Tour Assets/Goa Bus Tour.jpg'
+import imgBusPackges34 from '../../Assets/Bus Tour Assets/Agra Bus Tour.jpg'
+import imgBusPackges35 from '../../Assets/Bus Tour Assets/Jogni Bus Tour.jpg'
+import imgBusPackges36 from '../../Assets/Bus Tour Assets/Shaily Peak Bus Tour.jpg'
+import imgBusPackges37 from '../../Assets/Bus Tour Assets/Buddha Bus Tour.jpg'
+import imgBusPackges38 from '../../Assets/Bus Tour Assets/bada bagh Bus Tour.jpg'
+import imgBusPackges39 from '../../Assets/Bus Tour Assets/Golden Temple Bus Tour.jpg'
+import imgBusPackges40 from '../../Assets/Bus Tour Assets/Jal Mahal Bus Tour.jpg'
+//TrainPackages imports
+import imgTrainPackage41 from '../../Assets/Train packages Assets/Mumbai-Goa Train.jpg'
+import imgTrainPackage42 from '../../Assets/Train packages Assets/Mumbai-Agra Train.jpg'
+import imgTrainPackage43 from '../../Assets/Train packages Assets/Mumbai- manali Train.jpg'
+import imgTrainPackage44 from '../../Assets/Train packages Assets/Mumbai-shimla Trains.jpg'
+import imgTrainPackage45 from '../../Assets/Train packages Assets/Mumbai-Sikkim Train.jpg'
+import imgTrainPackage46 from '../../Assets/Train packages Assets/UP-jaisalmer trains.jpg'
+import imgTrainPackage47 from '../../Assets/Train packages Assets/Mumbai-Amritsar Train.png'
+import imgTrainPackage48 from '../../Assets/Train packages Assets/Hyderabad-jaipur Train.jpg'
+//FlightPackages imports
+import imgFlightPackage49 from '../../Assets/Flight Packages Assets/Goa Flight.jpg'
+import imgFlightPackage50 from '../../Assets/Flight Packages Assets/Agra Flight.jpg'
+import imgFlightPackage51 from '../../Assets/Flight Packages Assets/Manali Flight.jpg'
+import imgFlightPackage52 from '../../Assets/Flight Packages Assets/shimla Flight.jpg'
+import imgFlightPackage53 from '../../Assets/Flight Packages Assets/sikkim Flight.jpg'
+import imgFlightPackage54 from '../../Assets/Flight Packages Assets/jaisalmer Flight.jpg'
+import imgFlightPackage55 from '../../Assets/Flight Packages Assets/Amritsar Flight.jpg'
+import imgFlightPackage56 from '../../Assets/Flight Packages Assets/Jaipur Flight.jpg'
 
-export const packagesTravlling = [
+export const packagesTravelling = [
     {
       id:1,
       image: imgTravlling1,
@@ -206,8 +233,7 @@ export const packagesTravlling = [
     },
     // Add more packages as needed
   ];
-
- export const packagesRafting = [
+  export const packagesRafting = [
     {
       id: 9,
       title: 'Adventures Rafting in Kullu',
@@ -283,7 +309,6 @@ export const packagesTravlling = [
     
     // Add more packages as needed
   ];
-
  export const packagesTrekking = [
     {
       id: 17,
@@ -416,6 +441,202 @@ export const packagesTravlling = [
       duration: '3 Days & 2 Nights',
       price: '₹13,500',
       description: 'The Leela Palace Jaipur is a palatial masterpiece in the Pink City, embodying grandeur and Rajasthani opulence. With regal accommodations, exquisite dining, and impeccable service, this luxury palace hotel offers an unparalleled experience of luxury and splendor in the heart of Jaipur.',
+    },
+    
+    // Add more packages as needed
+  ];
+  export const packagesBus = [
+    {
+      id: 33,
+      title: 'Goa Discovery: Bus Tour Package',
+      image: imgBusPackges33, 
+      price: '₹20,000',
+      description: 'Embark on a captivating journey with our Goa Discovery bus tour package. Immerse yourself in the rich cultural tapestry of Goa as you explore ancient churches vibrant markets and lush spice plantations. Indulge in the breathtaking beauty of sun-kissed beaches and savor the flavors of authentic Goan cuisine. This adventure promises a perfect blend of relaxation and cultural exploration ensuring an unforgettable experience in the Pearl of the Orient.',
+    },
+    {
+      id: 34,
+      title: 'Agra Heritage Delight',
+      image:  imgBusPackges34  ,
+      price: '₹30,000',
+      description: 'Embark on a captivating journey with our Agra Heritage Delight package, a 2-day extravaganza that unveils the timeless beauty of Agra. Witness the ethereal charm of the Taj Mahal at sunrise, delve into the rich history of Agra Fort, and stroll through the vibrant local markets. Immerse yourself in the citys cultural tapestry, complemented by comfortable accommodations and delectable local cuisine. Agra Heritage Delight promises an unforgettable blend of history, architecture, and the warm embrace of Agras enchanting heritage.',
+    },
+    {
+      id: 35,
+      title: 'Jogni Waterfall Adventure Tour',
+      image: imgBusPackges35,
+      price: '₹35,000',
+      description: ' On a thrilling  Jogni Waterfall Adventure Tour, immersing yourself in the natural beauty of the serene Jogni Waterfall Road. Experience the joy of a guided trek to the mesmerizing waterfall, indulge in a picnic lunch amidst lush surroundings, and unwind in comfortable accommodations. This curated package promises a perfect blend of exploration and relaxation in the heart of nature.',
+    },
+    {
+      id: 36,
+      title: 'Experience the Majestic Beauty of Shaily Peak, Shimla with Our Exclusive Bus Tour Packages!',
+      image: imgBusPackges36,
+      price: '₹40,000',
+      description: 'On a mesmerizing journey to Shaily Peak, Shimla, with our exclusive bus tour packages. Enjoy a day excursion filled with panoramic views, guided tours, and a delightful packed lunch. For a weekend retreat, experience two days of exploration, evening bonfires, and cultural activities, staying at a cozy hotel near Shaily Peak. Adventure enthusiasts can opt for our adrenaline-packed package, including trekking, camping, and thrilling outdoor activities. Whether its a family-friendly tour or an adventure-filled escape, our Shaily Peak bus tour packages promise an unforgettable experience.',
+    },
+    {
+      id: 37,
+      title: 'Enchanting Buddha Park Discovery Bus Tour',
+      image: imgBusPackges37,
+      price: '₹45,000',
+      description: 'Embark on a soul-stirring journey with our "Enchanting Buddha Park Discovery Tour." Witness the awe-inspiring 130-foot Buddha statue amidst the tranquil surroundings of Sikkim. Immerse yourself in spirituality as you explore the beautiful gardens and nearby Rumtek Monastery, creating memories that resonate with peace and serenity.',
+    },
+    {
+      id: 38,
+      title: 'Bada Bagh luxury Bus Tour',
+      image: imgBusPackges38,
+      price: '₹50,000',
+      description: 'On a captivating bus tour to Bada Bagh in Jaisalmer. Immerse yourself in the rich history of Jaisalmer Fort, witness the mesmerizing sunset at Gadisar Lake, and explore the ornate architecture of Patwon Ki Haveli. The highlight of the trip is the visit to Bada Bagh, a historical garden complex with intricately designed cenotaphs, offering a serene retreat amidst the desert landscape. This enchanting journey is a perfect blend of cultural exploration and natural beauty, promising an unforgettable experience in the heart of Rajasthan.',
+    },
+    {
+      id: 39,
+      title: 'Luxury Bus Package Golden Temple Discovery Tour',
+      image: imgBusPackges39,
+      price: '₹55,000',
+      description: 'Embark on an opulent journey to explore the spiritual and architectural marvel, the Golden Temple, in Amritsar. Our Luxury Bus Package ensures a seamless and enriching experience, combining comfort, culture, and divine tranquility.',
+    },
+    {
+      id: 40,
+      title: 'Luxury Bus Package Jal Mahal Discovery Tour',
+      image: imgBusPackges40,
+      price: '₹60,000',
+      description: 'Your day begins with the serenity of the Man Sagar Lake as you approach the magical Jal Mahal, a water palace that appears to float on the shimmering waters. Marvel at the architectural finesse and historical significance of this iconic landmark as you explore its intricacies.',
+    },
+    
+    // Add more packages as needed
+  ];
+  export const packagesTrain = [
+    {
+      id: 41,
+      title: 'Mumbai to Goa Train Expedition',
+      image: imgTrainPackage41, 
+      price: ' ₹20,000',
+      duration:'8 days & 2 Nights',
+      description: 'The bustling city of Mumbai to the sun-soaked beaches of Goa with our specially curated Train Expedition package. Experience the thrill of traversing the picturesque Western Ghats, witness the changing landscapes, and arrive in Goa ready for a memorable vacation filled with sun, sand, and relaxation.',
+    },
+    {
+      id: 42,
+      title: 'Mumbai to Agra Heritage Train Expedition',
+      image: imgTrainPackage42,
+      price: '₹25,000',
+      duration:'7 days & 2 Nights',
+      description: 'The bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Train Expedition package. Immerse yourself in the cultural richness, witness architectural marvels, and experience the historical grandeur of Agra, home to the iconic Taj Mahal.',
+    },
+    {
+      id: 43,
+      title: 'Mumbai to Manali Express: Scenic Train Journey',
+      image: imgTrainPackage43,
+      price: '₹22,000',
+      duration:'8 days & 3 Nights',
+      description: 'The train journey from the vibrant city of Mumbai to the picturesque landscapes of Manali with our specially crafted Express Train package. Witness the breathtaking scenery, traverse through mountainous terrains, and arrive in Manali ready to explore the serene beauty of the Himalayas.',
+    },
+    {
+      id: 44,
+      title: 'Gujarat to Shimla Himalayan Explorer Train Tour',
+      image: imgTrainPackage44,
+      price: '₹20,000',
+      duration:'8 days & 2 Nights',
+      description: 'The enchanting landscapes of Shimla with our carefully curated Himalayan Explorer Train Tour. Traverse through diverse terrains, witness the beauty of the Western Ghats and the Himalayas, and arrive in Shimla ready to immerse yourself in the serene mountain retreat.',
+    },
+    {
+      id: 45,
+      title: 'Mumbai to Sikkim Himalayan Expedition',
+      image: imgTrainPackage45,
+      price: '₹26,000',
+      duration:'5 days & 2 Nights',
+      description: 'On an awe-inspiring train journey from the bustling city of Mumbai to the serene landscapes of Sikkim with our meticulously crafted Himalayan Expedition package. Traverse through diverse terrains, witness the beauty of the Eastern Ghats and the Himalayas, and arrive in Sikkim ready to explore the enchanting Himalayan kingdom.',
+    },
+    {
+      id: 46,
+      title: 'Uttar Pradesh to Jaisalmer Desert Odyssey Train Tour',
+      image: imgTrainPackage46,
+      price: '₹30,000',
+      duration:'8 days & 4 Nights',
+      description: 'The culturally rich state of Uttar Pradesh to the golden sands of Jaisalmer with our thoughtfully curated Desert Odyssey Train Tour. Traverse through the historical landscapes, witness the cultural tapestry of Rajasthan, and arrive in Jaisalmer ready to immerse yourself in the grandeur of the Thar Desert.',
+    },
+    {
+      id: 47,
+      title: 'Mumbai to Amritsar Spiritual Journey by Train ',
+      image: imgTrainPackage47,
+      price: '₹35,000',
+      duration:'4 days & 2 Nights',
+      description: 'On a soulful train journey from the bustling city of Mumbai to the spiritual heart of Punjab, Amritsar, with our carefully curated Spiritual Journey by Train package. Experience the cultural richness, witness religious fervor, and arrive in Amritsar ready to immerse yourself in the divine atmosphere.',
+    },
+    {
+      id: 48,
+      title: 'Hyderabad to Jaipur Royal Heritage Train Journey',
+      image: imgTrainPackage48,
+      price: '₹40,000',
+      duration:'8 days & 3 Nights',
+      description: 'The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Train Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.',
+    },
+    
+    // Add more packages as needed
+  ];
+  export const packagesFlight = [
+    {
+      id: 49,
+      title: 'Mumbai to Goa Blissful Getaway - Flights',
+      image: imgFlightPackage49 ,
+      price: '₹15,000 per person',
+      description: 'Indulge in a seamless and enjoyable journey from the bustling city of Mumbai to the sun-kissed beaches of Goa with our carefully crafted Blissful Getaway Flight Package. Escape the routine, relax on the sandy shores, and immerse yourself in the vibrant culture of Goa.',
+      Note:'Prices may vary based on the airline, season, and additional customization. The itinerary is subject to change based on flight schedules and availability.',
+    },
+    {
+      id: 50,
+      title: 'Mumbai to Agra Heritage Flight Expedition',
+      image: imgFlightPackage50,
+      price: '₹20,000 per person',
+      description: 'Embark on a fascinating journey from the bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Flight Expedition package. Immerse yourself in the architectural marvels, witness the iconic Taj Mahal, and experience the rich cultural heritage of Agra.',
+      Note:'',
+    },
+    {
+      id: 51,
+      title: 'Mumbai to Manali Alpine Escape',
+      image: imgFlightPackage51,
+      price: '₹25,000 per person',
+      description: ' on a thrilling journey from the bustling city of Mumbai to the serene landscapes of Manali with our carefully crafted Alpine Escape Flight Package. Immerse yourself in the pristine beauty of the Himalayas, enjoy adventure activities, and experience the tranquility of Manali..',
+      Note:'',
+    },
+    {
+      id: 52,
+      title: 'Gujarat to Shimla Mountain Escape',
+      image: imgFlightPackage52,
+      price: '₹22,000 per person',
+      description: ' the vibrant state of Gujarat to the captivating landscapes of Shimla with our carefully curated Mountain Escape Flight Package. Immerse yourself in the Himalayan charm, explore colonial architecture, and experience the serene beauty of Shimla.',
+      Note:'',
+    },
+    {
+      id: 53,
+      title: 'Mumbai to Sikkim Himalayan Expedition',
+      image: imgFlightPackage53,
+      price: '₹28,000 per person',
+      description: 'The bustling city of Mumbai to the enchanting landscapes of Sikkim with our carefully crafted Himalayan Expedition Flight Package. Immerse yourself in the tranquility of the Eastern Himalayas, explore monasteries, and witness the mesmerizing beauty of Sikkim.',
+      Note:'',
+    },
+    {
+      id: 54,
+      title: 'Uttar Pradesh to Jaisalmer Desert Odyssey',
+      image: imgFlightPackage54,
+      price: '₹32,000 per person',
+      description: 'On a magical journey from the historic state of Uttar Pradesh to the golden sands of Jaisalmer with our carefully curated Desert Odyssey Flight Package. Immerse yourself in the royal grandeur of Rajasthan, explore the Thar Desert, and witness the vibrant culture of Jaisalmer.',
+      Note:'',
+    },
+    {
+      id: 55,
+      title: 'Mumbai to Amritsar Spiritual Journey',
+      image: imgFlightPackage55,
+      price: '₹20,000 per person1500',
+      description: 'The city of Mumbai to the sacred land of Amritsar with our carefully curated Spiritual Journey Flight Package. Immerse yourself in the divine ambiance of the Golden Temple, explore historical landmarks, and experience the rich Sikh culture of Amritsar.',
+      Note:'',
+    },
+    {
+      id: 56,
+      title: 'Hyderabad to Jaipur Royal Heritage Flight Journey',
+      image: imgFlightPackage56,
+      price: '₹45,000 per person',
+      description: 'The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Flight Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.',
+      Note:'',
     },
     
     // Add more packages as needed
