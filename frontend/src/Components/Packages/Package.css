@@ -84,3 +84,23 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media screen and (max-width: 700px) {
+  .package-card {
+    width: 49%;
+  }
+  .packages-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .package-cards-container {
+    /* flex-wrap: nowrap; */
+    overflow-x: scroll;
+  }
+  .package-card {
+    width: 100%;
+  }
+}
