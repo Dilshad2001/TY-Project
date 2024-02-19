@@ -69,95 +69,96 @@ import imgFlightPackage53 from '../../Assets/Flight Packages Assets/sikkim Fligh
 import imgFlightPackage54 from '../../Assets/Flight Packages Assets/jaisalmer Flight.jpg'
 import imgFlightPackage55 from '../../Assets/Flight Packages Assets/Amritsar Flight.jpg'
 import imgFlightPackage56 from '../../Assets/Flight Packages Assets/Jaipur Flight.jpg'
+import Card from '../Card/Card';
 
 const packagesTravelling = [
   {
-    id:1,
+    id: 1,
     image: imgTravlling1,
-    title:'Goa Beach Paradise',
-    location:'Goa',
-    grade:'BEACH RELAX',
-    price:'₹15,000',
-    description:'the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s'
+    title: 'Goa Beach Paradise',
+    location: 'Goa',
+    grade: 'BEACH RELAX',
+    price: '₹15,000',
+    description: 'the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s'
   },
- {
-    id:2,
-    image:imgTravlling2,
-    title:'Taj Mahal',
-    location:'Agra',
-    grade:'CULTURAL RELAX',
-    price:'₹25,000',
-    description:'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.'
-    
+  {
+    id: 2,
+    image: imgTravlling2,
+    title: 'Taj Mahal',
+    location: 'Agra',
+    grade: 'CULTURAL RELAX',
+    price: '₹25,000',
+    description: 'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.'
+
   },
 
   {
-    id:3,
-    image:imgTravlling3,
-    title:'Jogni Waterfall Road',
-    location:' Manali',
-    grade:'CULTURAL RELAX',
-    price:'₹30,000',
-    description:'Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.' ,
-    
-  },
+    id: 3,
+    image: imgTravlling3,
+    title: 'Jogni Waterfall Road',
+    location: ' Manali',
+    grade: 'CULTURAL RELAX',
+    price: '₹30,000',
+    description: 'Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.',
 
-
-  {
-    id:4,
-    image:imgTravlling4,
-    title:'Shaily Peak',
-    location:'Shimla',
-    grade:'CULTURAL RELAX',
-    price:'₹35,237',
-    description:'Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.',
-    
-  },
-
-  {
-    id:5,
-    image:imgTravlling5,
-    title:'Buddha Park',
-    location:'Sikkim',
-    grade:'CULTURAL RELAX',
-    price:'₹40,000',
-    description:'The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.',
-
-    
-  },
-  {
-    id:6,
-    image:imgTravlling6,
-    title:'Bada Bagh ',
-    location:' Jaisalmer',
-    grade:'CULTURAL RELAX',
-    price:'₹45,000',
-    description:'This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.',
-    
   },
 
 
   {
-    id:7,
-    image:imgTravlling7,
-    title:'Golden Temple',
-    location:'Amritsar',
-    grade:'CULTURAL RELAX',
-    price:'₹50,000',
-    description:'Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.',
-    
+    id: 4,
+    image: imgTravlling4,
+    title: 'Shaily Peak',
+    location: 'Shimla',
+    grade: 'CULTURAL RELAX',
+    price: '₹35,237',
+    description: 'Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.',
+
+  },
+
+  {
+    id: 5,
+    image: imgTravlling5,
+    title: 'Buddha Park',
+    location: 'Sikkim',
+    grade: 'CULTURAL RELAX',
+    price: '₹40,000',
+    description: 'The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.',
+
+
+  },
+  {
+    id: 6,
+    image: imgTravlling6,
+    title: 'Bada Bagh ',
+    location: ' Jaisalmer',
+    grade: 'CULTURAL RELAX',
+    price: '₹45,000',
+    description: 'This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.',
+
   },
 
 
   {
-    id:8,
-    image:imgTravlling8,
-    title:'Jal Mahal',
-    location:'Jaipur',
-    grade:'CULTURAL RELAX',
-    price:'₹55,000',
-    description:'Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber',
-    
+    id: 7,
+    image: imgTravlling7,
+    title: 'Golden Temple',
+    location: 'Amritsar',
+    grade: 'CULTURAL RELAX',
+    price: '₹50,000',
+    description: 'Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.',
+
+  },
+
+
+  {
+    id: 8,
+    image: imgTravlling8,
+    title: 'Jal Mahal',
+    location: 'Jaipur',
+    grade: 'CULTURAL RELAX',
+    price: '₹55,000',
+    description: 'Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber',
+
   },
   // Add more packages as needed
 ];
@@ -201,7 +202,7 @@ const packagesRafting = [
   {
     id: 13,
     title: 'Kundalika River at Kolad, Maharashtra',
-    image: imgRafting13 ,
+    image: imgRafting13,
     price: '₹1200',
     DifficultyLevel: 'Grade I - Grade IV',
     DistanceCovered: '9 km - 36 km',
@@ -234,7 +235,7 @@ const packagesRafting = [
     DistanceCovered: '9 km - 36 km',
     description: 'Experience luxury travel with scenic coastal views.',
   },
-  
+
   // Add more packages as needed
 ];
 const packagesTrekking = [
@@ -294,14 +295,14 @@ const packagesTrekking = [
     price: '₹1500',
     description: 'The Rajmachi Trek, which you can do from either Lonavala or Karjat, is an exhilarating trek to the two historic forts of Manaranjan Fort and Shriwardhan Fort. Surrounded by immense natural beauty, this is sure to give you ample time to observe the purest form of natural abundance.',
   },
-  
+
   // Add more packages as needed
 ];
 const packagesHotels = [
   {
-    id:25,
+    id: 25,
     title: 'ITC Grand Goa Resort & Spa',
-    location:'Goa',
+    location: 'Goa',
     image: imgHotels25, // Use the imported image
     duration: '8 Days & 7 Nights',
     price: '₹20,000',
@@ -310,7 +311,7 @@ const packagesHotels = [
   {
     id: 26,
     title: 'Taj Hotel & Convention Centre',
-    location:'Agra',
+    location: 'Agra',
     image: imgHotels26,
     duration: '17 Days & 15 Nights',
     price: '₹80,000',
@@ -319,7 +320,7 @@ const packagesHotels = [
   {
     id: 27,
     title: 'Baragarh Resort & Spa, Manali- IHCL SeleQtions',
-    location:'Manali',
+    location: 'Manali',
     image: imgHotels27,
     duration: '5 Days & 4 Nights',
     price: '₹16,000',
@@ -328,7 +329,7 @@ const packagesHotels = [
   {
     id: 28,
     title: 'Woodays Resort',
-    location:'Shimla',
+    location: 'Shimla',
     image: imgHotels28,
     duration: '6 Days & 5 Nights',
     price: '₹18,000',
@@ -337,7 +338,7 @@ const packagesHotels = [
   {
     id: 29,
     title: 'Rhenock House (a luxury villa)',
-    location:'Sikim',
+    location: 'Sikim',
     image: imgHotels29,
     duration: '4 Days & 3 Nights',
     price: '₹14,000',
@@ -346,7 +347,7 @@ const packagesHotels = [
   {
     id: 30,
     title: 'Suryagarh Jaisalmer',
-    location:'Jaisalmer',
+    location: 'Jaisalmer',
     image: imgHotels30,
     duration: '8 Days & 7 Nights',
     price: '₹15,000',
@@ -355,7 +356,7 @@ const packagesHotels = [
   {
     id: 31,
     title: 'Welcomhotel by ITC Hotels, Raja Sansi, Amritsar',
-    location:'Amritsar',
+    location: 'Amritsar',
     image: imgHotels31,
     duration: '5 Days & 3 Nights',
     price: '₹10,000',
@@ -364,27 +365,27 @@ const packagesHotels = [
   {
     id: 32,
     title: 'The Leela Palace Jaipur',
-    location:'Jaipur',
+    location: 'Jaipur',
     image: imgHotels32,
     duration: '3 Days & 2 Nights',
     price: '₹13,500',
     description: 'The Leela Palace Jaipur is a palatial masterpiece in the Pink City, embodying grandeur and Rajasthani opulence. With regal accommodations, exquisite dining, and impeccable service, this luxury palace hotel offers an unparalleled experience of luxury and splendor in the heart of Jaipur.',
   },
-  
+
   // Add more packages as needed
 ];
 const packagesBus = [
   {
     id: 33,
     title: 'Goa Discovery: Bus Tour Package',
-    image: imgBusPackges33, 
+    image: imgBusPackges33,
     price: '₹20,000',
     description: 'Embark on a captivating journey with our Goa Discovery bus tour package. Immerse yourself in the rich cultural tapestry of Goa as you explore ancient churches vibrant markets and lush spice plantations. Indulge in the breathtaking beauty of sun-kissed beaches and savor the flavors of authentic Goan cuisine. This adventure promises a perfect blend of relaxation and cultural exploration ensuring an unforgettable experience in the Pearl of the Orient.',
   },
   {
     id: 34,
     title: 'Agra Heritage Delight',
-    image:  imgBusPackges34  ,
+    image: imgBusPackges34,
     price: '₹30,000',
     description: 'Embark on a captivating journey with our Agra Heritage Delight package, a 2-day extravaganza that unveils the timeless beauty of Agra. Witness the ethereal charm of the Taj Mahal at sunrise, delve into the rich history of Agra Fort, and stroll through the vibrant local markets. Immerse yourself in the citys cultural tapestry, complemented by comfortable accommodations and delectable local cuisine. Agra Heritage Delight promises an unforgettable blend of history, architecture, and the warm embrace of Agras enchanting heritage.',
   },
@@ -430,16 +431,16 @@ const packagesBus = [
     price: '₹60,000',
     description: 'Your day begins with the serenity of the Man Sagar Lake as you approach the magical Jal Mahal, a water palace that appears to float on the shimmering waters. Marvel at the architectural finesse and historical significance of this iconic landmark as you explore its intricacies.',
   },
-  
+
   // Add more packages as needed
 ];
 const packagesTrain = [
   {
     id: 41,
     title: 'Mumbai to Goa Train Expedition',
-    image: imgTrainPackage41, 
+    image: imgTrainPackage41,
     price: ' ₹20,000',
-    duration:'8 days & 2 Nights',
+    duration: '8 days & 2 Nights',
     description: 'The bustling city of Mumbai to the sun-soaked beaches of Goa with our specially curated Train Expedition package. Experience the thrill of traversing the picturesque Western Ghats, witness the changing landscapes, and arrive in Goa ready for a memorable vacation filled with sun, sand, and relaxation.',
   },
   {
@@ -447,7 +448,7 @@ const packagesTrain = [
     title: 'Mumbai to Agra Heritage Train Expedition',
     image: imgTrainPackage42,
     price: '₹25,000',
-    duration:'7 days & 2 Nights',
+    duration: '7 days & 2 Nights',
     description: 'The bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Train Expedition package. Immerse yourself in the cultural richness, witness architectural marvels, and experience the historical grandeur of Agra, home to the iconic Taj Mahal.',
   },
   {
@@ -455,7 +456,7 @@ const packagesTrain = [
     title: 'Mumbai to Manali Express: Scenic Train Journey',
     image: imgTrainPackage43,
     price: '₹22,000',
-    duration:'8 days & 3 Nights',
+    duration: '8 days & 3 Nights',
     description: 'The train journey from the vibrant city of Mumbai to the picturesque landscapes of Manali with our specially crafted Express Train package. Witness the breathtaking scenery, traverse through mountainous terrains, and arrive in Manali ready to explore the serene beauty of the Himalayas.',
   },
   {
@@ -463,7 +464,7 @@ const packagesTrain = [
     title: 'Gujarat to Shimla Himalayan Explorer Train Tour',
     image: imgTrainPackage44,
     price: '₹20,000',
-    duration:'8 days & 2 Nights',
+    duration: '8 days & 2 Nights',
     description: 'The enchanting landscapes of Shimla with our carefully curated Himalayan Explorer Train Tour. Traverse through diverse terrains, witness the beauty of the Western Ghats and the Himalayas, and arrive in Shimla ready to immerse yourself in the serene mountain retreat.',
   },
   {
@@ -471,7 +472,7 @@ const packagesTrain = [
     title: 'Mumbai to Sikkim Himalayan Expedition',
     image: imgTrainPackage45,
     price: '₹26,000',
-    duration:'5 days & 2 Nights',
+    duration: '5 days & 2 Nights',
     description: 'On an awe-inspiring train journey from the bustling city of Mumbai to the serene landscapes of Sikkim with our meticulously crafted Himalayan Expedition package. Traverse through diverse terrains, witness the beauty of the Eastern Ghats and the Himalayas, and arrive in Sikkim ready to explore the enchanting Himalayan kingdom.',
   },
   {
@@ -479,7 +480,7 @@ const packagesTrain = [
     title: 'Uttar Pradesh to Jaisalmer Desert Odyssey Train Tour',
     image: imgTrainPackage46,
     price: '₹30,000',
-    duration:'8 days & 4 Nights',
+    duration: '8 days & 4 Nights',
     description: 'The culturally rich state of Uttar Pradesh to the golden sands of Jaisalmer with our thoughtfully curated Desert Odyssey Train Tour. Traverse through the historical landscapes, witness the cultural tapestry of Rajasthan, and arrive in Jaisalmer ready to immerse yourself in the grandeur of the Thar Desert.',
   },
   {
@@ -487,7 +488,7 @@ const packagesTrain = [
     title: 'Mumbai to Amritsar Spiritual Journey by Train ',
     image: imgTrainPackage47,
     price: '₹35,000',
-    duration:'4 days & 2 Nights',
+    duration: '4 days & 2 Nights',
     description: 'On a soulful train journey from the bustling city of Mumbai to the spiritual heart of Punjab, Amritsar, with our carefully curated Spiritual Journey by Train package. Experience the cultural richness, witness religious fervor, and arrive in Amritsar ready to immerse yourself in the divine atmosphere.',
   },
   {
@@ -495,20 +496,20 @@ const packagesTrain = [
     title: 'Hyderabad to Jaipur Royal Heritage Train Journey',
     image: imgTrainPackage48,
     price: '₹40,000',
-    duration:'8 days & 3 Nights',
+    duration: '8 days & 3 Nights',
     description: 'The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Train Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.',
   },
-  
+
   // Add more packages as needed
 ];
 const packagesFlight = [
   {
     id: 49,
     title: 'Mumbai to Goa Blissful Getaway - Flights',
-    image: imgFlightPackage49 ,
+    image: imgFlightPackage49,
     price: '₹15,000 per person',
     description: 'Indulge in a seamless and enjoyable journey from the bustling city of Mumbai to the sun-kissed beaches of Goa with our carefully crafted Blissful Getaway Flight Package. Escape the routine, relax on the sandy shores, and immerse yourself in the vibrant culture of Goa.',
-    Note:'Prices may vary based on the airline, season, and additional customization. The itinerary is subject to change based on flight schedules and availability.',
+    Note: 'Prices may vary based on the airline, season, and additional customization. The itinerary is subject to change based on flight schedules and availability.',
   },
   {
     id: 50,
@@ -516,7 +517,7 @@ const packagesFlight = [
     image: imgFlightPackage50,
     price: '₹20,000 per person',
     description: 'Embark on a fascinating journey from the bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Flight Expedition package. Immerse yourself in the architectural marvels, witness the iconic Taj Mahal, and experience the rich cultural heritage of Agra.',
-    Note:'',
+    Note: '',
   },
   {
     id: 51,
@@ -524,7 +525,7 @@ const packagesFlight = [
     image: imgFlightPackage51,
     price: '₹25,000 per person',
     description: ' on a thrilling journey from the bustling city of Mumbai to the serene landscapes of Manali with our carefully crafted Alpine Escape Flight Package. Immerse yourself in the pristine beauty of the Himalayas, enjoy adventure activities, and experience the tranquility of Manali..',
-    Note:'',
+    Note: '',
   },
   {
     id: 52,
@@ -532,7 +533,7 @@ const packagesFlight = [
     image: imgFlightPackage52,
     price: '₹22,000 per person',
     description: ' the vibrant state of Gujarat to the captivating landscapes of Shimla with our carefully curated Mountain Escape Flight Package. Immerse yourself in the Himalayan charm, explore colonial architecture, and experience the serene beauty of Shimla.',
-    Note:'',
+    Note: '',
   },
   {
     id: 53,
@@ -540,7 +541,7 @@ const packagesFlight = [
     image: imgFlightPackage53,
     price: '₹28,000 per person',
     description: 'The bustling city of Mumbai to the enchanting landscapes of Sikkim with our carefully crafted Himalayan Expedition Flight Package. Immerse yourself in the tranquility of the Eastern Himalayas, explore monasteries, and witness the mesmerizing beauty of Sikkim.',
-    Note:'',
+    Note: '',
   },
   {
     id: 54,
@@ -548,7 +549,7 @@ const packagesFlight = [
     image: imgFlightPackage54,
     price: '₹32,000 per person',
     description: 'On a magical journey from the historic state of Uttar Pradesh to the golden sands of Jaisalmer with our carefully curated Desert Odyssey Flight Package. Immerse yourself in the royal grandeur of Rajasthan, explore the Thar Desert, and witness the vibrant culture of Jaisalmer.',
-    Note:'',
+    Note: '',
   },
   {
     id: 55,
@@ -556,7 +557,7 @@ const packagesFlight = [
     image: imgFlightPackage55,
     price: '₹20,000 per person1500',
     description: 'The city of Mumbai to the sacred land of Amritsar with our carefully curated Spiritual Journey Flight Package. Immerse yourself in the divine ambiance of the Golden Temple, explore historical landmarks, and experience the rich Sikh culture of Amritsar.',
-    Note:'',
+    Note: '',
   },
   {
     id: 56,
@@ -564,9 +565,9 @@ const packagesFlight = [
     image: imgFlightPackage56,
     price: '₹45,000 per person',
     description: 'The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Flight Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.',
-    Note:'',
+    Note: '',
   },
-  
+
   // Add more packages as needed
 ];
 const PackageTitleAndImages = () => {
@@ -575,107 +576,184 @@ const PackageTitleAndImages = () => {
   }, []);
 
   return (
-    <div className='PackageTitle'>
+    <>
       <h3 data-aos='fade-right' className='title'>
         Travelling with us and  you will experience something special !
       </h3>
       <div className="package-cards-container">
         {packagesTravelling.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
-     
+
       <h3 data-aos='fade-right' className='title'>
-      Best Rafting place in India
+        Best Rafting place in India
       </h3>
       <div className="package-cards-container">
         {packagesRafting.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
 
       <h3 data-aos='fade-right' className='title'>
-      Trekking  and  Adventures in India
+        Trekking  and  Adventures in India
       </h3>
       <div className="package-cards-container">
         {packagesTrekking.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
 
       <h3 data-aos='fade-right' className='title'>
-      Luxury Hotels with  Affordable price !
+        Luxury Hotels with  Affordable price !
       </h3>
       <div className="package-cards-container">
         {packagesHotels.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
+
       <h3 data-aos='fade-right' className='title'>
-      Bus packages
+        Bus packages
       </h3>
       <div className="package-cards-container">
         {packagesBus.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
+
       <h3 data-aos='fade-right' className='title'>
-      Train  packages
+        Train  packages
       </h3>
       <div className="package-cards-container">
         {packagesTrain.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
+      
       <h3 data-aos='fade-right' className='title'>
-      Flight Packages
+        Flight Packages
       </h3>
       <div className="package-cards-container">
         {packagesFlight.map((packageItem) => (
-          <PackageCard key={packageItem.id} packageItem={packageItem} />
+          <Card
+            className={'package-card'}
+            key={packageItem.id}
+            id={packageItem.id}
+            img={packageItem.image}
+            title={packageItem.title}
+            location={packageItem.location}
+            grade={packageItem.grade}
+            price={packageItem.price}
+            description={packageItem.description}
+          // linkTo={`packages/${data.id}`}
+          // btnText='Details'
+          />
         ))}
       </div>
-
-
-
-     
-    </div>
+    </>
   );
 };
 
-const PackageCard = ({ packageItem }) => {
-  return (
-    <Link to={`/package/${packageItem.id}`} key={packageItem.id}>
-      <div className="package-card">
-        <img
-          className="package-image"
-          src={packageItem.image}
-          alt={packageItem.title}
-        />
-        <div className="package-details">
-          <div className="package-title">{packageItem.title}</div>
-          <div className="package-location">{packageItem.location}</div>
-          <div className="package-price">{packageItem.price}</div>
-          <div className="package-duration">{packageItem.duration}</div>
-          <div className="package-description">{packageItem.description}</div>
-        </div>
-      </div>
-    </Link>
-  );
-};
+// const PackageCard = ({ packageItem }) => {
+//   return (
+//     <Link to={`/package/${packageItem.id}`} key={packageItem.id}>
+//       <div className="package-card">
+//         <img
+//           className="package-image"
+//           src={packageItem.image}
+//           alt={packageItem.title}
+//         />
+//         <div className="package-details">
+//           <div className="package-title">{packageItem.title}</div>
+//           <div className="package-location">{packageItem.location}</div>
+//           <div className="package-price">{packageItem.price}</div>
+//           <div className="package-duration">{packageItem.duration}</div>
+//           <div className="package-description">{packageItem.description}</div>
+//         </div>
+//       </div>
+//     </Link>
+//   );
+// };
 
 const Packages = () => {
   return (
-    <div className="packages-container">
-        {/* Render RaftingTitle component */}
-        <div className="Package-title-container">
-
+    <div className="packages-container container">
       <PackageTitleAndImages />
-      </div>
-
-      
     </div>
-    
+
   );
 };
 

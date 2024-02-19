@@ -1,0 +1,64 @@
+/* Styling for the image within the card */
+.imageDiv {
+    height: 250px;
+    width: 100%;
+}
+
+.imageDiv img {
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Styling for the cardInfo section within the card */
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.destTitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.continent {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* Styling for the fees and grade section within the card */
+.location-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grade {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: fit-content;
+    margin-top: 6px;
+}
+
+.grade small {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.price h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styling for the description within the card */
+.desc p {
+    font-size: 14px;
+    color: #777;
+    padding: 10px 5px;
+}
