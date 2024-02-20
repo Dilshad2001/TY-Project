@@ -93,6 +93,9 @@ const PackageDetail = () => {
           <img className="package-image" src={packageItem.image} alt={packageItem.title} />
           <div className="package-details">
             <div className="package-price">{packageItem.price}</div>
+            <div className="package-grade">{packageItem.grade}</div>
+            <div className="package-DifficultyLevel">{packageItem.DifficultyLevel}</div>
+            <div className="package- DistanceCovered">{packageItem.DistanceCovered}</div>
             <div className="package-location">{packageItem.location}</div>
             <div className="package-itinerary">{packageItem.itinerary}</div>      
             <div className="package-description">{packageItem.description}</div>

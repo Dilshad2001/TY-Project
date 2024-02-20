@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Trekking.css'; // Check the correctness of this line
+import './Trekking.css'// Check the correctness of this line
 import TrekkingData from './TrekingData';
 
 const Trekking = () => {
