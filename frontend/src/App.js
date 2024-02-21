@@ -9,9 +9,6 @@ import Packages from './Components/Packages/Packages';
 import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail Component
 import Trekking from './Components/Trekking/Trekking';
 import Footer from './Components/Footer/Footer';
-
-
-
 const App = () => {
   return (
     <div className='App'>
@@ -24,9 +21,10 @@ const App = () => {
         <Route path="/packages" element={<Packages />} />
         <Route path="/package/:id" element={<PackageDetail />} />
         <Route path='/Trekking' element={<Trekking />} />
+        
       </Routes>
       
-      <Footer />
+      
 
     </div>
   )

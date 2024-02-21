@@ -1,76 +1,97 @@
-/* TrekkingPage.css */
+/* Trekking.css */
 
-/* Include Packages.css for shared styles */
-
-/* Additional styles for trekking page */
-.trekking-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* Styling for the main section */
+.main {
   padding: 20px;
 }
 
-.trekking-card {
-  width: 300px;
-  margin: 20px;
-  background-color: #f8f8f8; /* Change background color */
-  border: 1px solid #ccc; /* Change border color */
-  border-radius: 8px; /* Adjust border-radius */
-  overflow: hidden;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+/* Styling for the section title */
+.secTitle {
+  text-align: center;
 }
 
-.trekking-image {
-  width: 100%;
-  height: 200px; /* Adjust height */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Styling for the section content grid */
+.secContent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between grid items */
+  margin-top: 20px;
+}
+
+/* Styling for the Trekking card */
+.Trekking-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.Trekking-card:hover {
+  transform: scale(1.02); /* Add a slight zoom effect on hover */
+}
+
+/* Styling for the image within the card */
+.Trekking-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   object-fit: cover;
 }
 
-.trekking-details {
-  padding: 15px;
+/* Styling for the cardInfo section within the card */
+.Trekking-card .cardInfo {
+  margin-top: 20px;
 }
 
-.trekking-title {
-  font-size: 1.4em; /* Increase font size */
+.Trekking-card .destTitle {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 15px; /* Adjust margin */
+  margin-bottom: 10px;
 }
 
-.trekking-price {
-  color: #e74c3c; /* Change price color */
-  font-size: 1.4em;
+.Trekking-card .grade {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.Trekking-card .grade small {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.Trekking-card .price h5 {
+  font-size: 18px;
   font-weight: bold;
 }
 
-.trekking-description {
-  margin-top: 15px; /* Adjust margin */
+.Trekking-card .desc p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
 }
 
-/* Additional styles for trekking dropdown */
-.trekking-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.trekking-dropdown-btn {
-  padding: 12px;
+/* Styling for the DETAILS button */
+.Trekking-card .btn {
+  background-color: hsl(187, 83%, 54%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.trekking-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 180px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.trekking-dropdown-option {
-  padding: 14px 18px;
-  display: block;
-}
-
-.trekking-dropdown:hover .trekking-dropdown-content {
-  display: block;
+.Trekking-card .btn:hover {
+  background-color: hsl(187, 83%, 54%);
 }

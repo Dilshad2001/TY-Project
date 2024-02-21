@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Aos from 'aos'; // Import AOS library
 import 'aos/dist/aos.css'; // Import AOS styles
 import './Package.css'; // Import the specific CSS file for Packages
+import './PackageDetail'
+import Footer from '../Footer/Footer';
 //Travlling Packges imports
 import imgTravlling1 from '../../Assets/Main-Assets/Goa img1.jpg'
 import imgTravlling2 from '../../Assets/Main-Assets/Agra img2.jpg'
@@ -813,37 +815,18 @@ const PackageTitleAndImages = () => {
           />
         ))}
       </div>
+      
     </>
+    
   );
 };
-
-// const PackageCard = ({ packageItem }) => {
-//   return (
-//     <Link to={`/package/${packageItem.id}`} key={packageItem.id}>
-//       <div className="package-card">
-//         <img
-//           className="package-image"
-//           src={packageItem.image}
-//           alt={packageItem.title}
-//         />
-//         <div className="package-details">
-//           <div className="package-title">{packageItem.title}</div>
-//           <div className="package-location">{packageItem.location}</div>
-//           <div className="package-price">{packageItem.price}</div>
-//           <div className="package-duration">{packageItem.duration}</div>
-//           <div className="package-description">{packageItem.description}</div>
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// };
-
 const Packages = () => {
   return (
     <div className="packages-container container">
       <PackageTitleAndImages />
+      <Footer />
     </div>
-
+    
   );
 };
 
