@@ -79,6 +79,7 @@ const Home = () => {
     <section className='home'>
     
       <div className="overlay"></div>
+      
       <video src={video} muted autoPlay loop type="video/mp4"></video>
 
       <div className='homeContent container'>

@@ -9,6 +9,10 @@ import Packages from './Components/Packages/Packages';
 import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail Component
 import Trekking from './Components/Trekking/Trekking';
 import Footer from './Components/Footer/Footer';
+import  About from './Components/About/About'
+import Contact from './Components/Contact/Contact'
+//import BookNow from  './Components/Book Now/BookNow'
+
 const App = () => {
   return (
     <div className='App'>
@@ -21,7 +25,9 @@ const App = () => {
         <Route path="/packages" element={<Packages />} />
         <Route path="/package/:id" element={<PackageDetail />} />
         <Route path='/Trekking' element={<Trekking />} />
-        
+        <Route path='/About' element={<About />} />
+        <Route path='/Contact' element={<Contact />} />
+    
       </Routes>
       
       

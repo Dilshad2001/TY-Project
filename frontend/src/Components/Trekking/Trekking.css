@@ -18,7 +18,10 @@
 /* Styling for the section content grid */
 .secContent-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Adjust the number of columns as needed */
   gap: 20px; /* Adjust the gap between grid items */
   margin-top: 20px;
 }
@@ -31,6 +34,10 @@
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
 }
 
 .Trekking-card:hover {

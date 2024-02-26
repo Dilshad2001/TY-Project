@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Main container */
+  .contact-hero{
+    text-align: center;
+  }
+  .contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+/* Contact Hero Section */
+.contact-hero {
+    background-image: url('C:\Users\DILSHAD\Downloads\About Page.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background overlay */
+    padding: 20px;
+  }
+  
+  .contact-hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-hero-content p {
+    font-size: 1.2em;
+  }
+  
+  
+  /* Contact Form Section */
+  .contact-form {
+    margin: 40px 0;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #40bfbf;
+    color: #0b0909;
+    padding: 10px 20px;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .info-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-info h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
