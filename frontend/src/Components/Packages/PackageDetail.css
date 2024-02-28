@@ -1,68 +1,67 @@
 /* PackageDetail.css */
-
 .package-detail-container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: auto;
-    h2 {
-      font-weight: bold;
-      color: black;
-    
-    }
-  }
-  
-  .confirmation-message {
-    border: 2px solid #ccc;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-  }
-  
-  .confirmation-message p {
-    margin: 5px 0;
-  }
-  
-  .confirmation-message button {
-    padding: 8px;
-    margin-top: 10px;
-    background-color: #3e92ad;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.package-detail-container h2 {
+  font-weight: bold;
+  color: black;
+}
+
+.confirmation-message {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.confirmation-message p {
+  margin: 5px 0;
+}
+
+.confirmation-message button {
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #3e92ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .booking-form {
-    margin-top: 20px;
-    h3 {
-      font-weight: bold;
-      color: rgb(27, 197, 194);
-      
-    }
-  }
-  
-  .booking-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .booking-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .booking-form button {
-    padding: 10px;
-    background-color: #3e92ad;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  margin-top: 20px;
+}
+
+.booking-form h3 {
+  font-weight: bold;
+  color: rgb(27, 197, 194);
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.booking-form button {
+  padding: 10px;
+  background-color: #3e92ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

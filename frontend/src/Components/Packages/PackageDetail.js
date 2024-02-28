@@ -1,6 +1,6 @@
 // PackageDetail.js
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,  useNavigate } from "react-router-dom";
 import "./PackageDetail.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -36,6 +36,7 @@ const renderDetails = (details) => {
 };
 
 const PackageDetail = () => {
+  const navigate = useNavigate();
   const { id } = useParams(); 
   const fifteenDaysFromNow = new Date();
   fifteenDaysFromNow.setDate(fifteenDaysFromNow.getDate() + 15);
@@ -55,8 +56,9 @@ const PackageDetail = () => {
     name: "",
     email: "",
     phone: "",
-    numberOfPeople: '',
+    numberOfPeople:"",
     monthOfTravel: "",
+
   });
 
   const [confirmationVisible, setConfirmationVisible] = useState(false);
@@ -74,13 +76,16 @@ const PackageDetail = () => {
       alert('Please fill in all the required fields correctly.');
       return;
     }
-   
+    if (!packageItem || !packageItem.price) {
+      alert('Invalid package details. Please check the price.');
+      return;
+    }
     const price = parseFloat(packageItem.price);
     const numberOfPeople = parseInt(bookingInfo.numberOfPeople);
 
+    console.log('packageItem:', packageItem);
     console.log('price:', price);
     console.log('numberOfPeople:', numberOfPeople);
-    
 
     if (isNaN(price) || isNaN(numberOfPeople) || price <= 0 || numberOfPeople <= 0) {
       alert('Invalid package details. Please check the price and number of people.');
@@ -92,12 +97,15 @@ const PackageDetail = () => {
       alert('Invalid calculation. Please check package details.');
       return;
     }
+
+    console.log('calculatedTotalAmount:', calculatedTotalAmount);
+
   
-
-
-    setTotalAmount(calculatedTotalAmount);
+    setTotalAmount(calculatedTotalAmount); 
     setConfirmationVisible(true);
+    navigate(`/booking/${id}`, { state: { bookingInfo, totalAmount: calculatedTotalAmount, packageItem } });
   };
+  
 
   const closeConfirmation = () => {
     setConfirmationVisible(false);
@@ -151,8 +159,11 @@ const PackageDetail = () => {
             <div className="package-DifficultyLevel">{packageItem.DifficultyLevel}</div>
             <div className="package- DistanceCovered">{packageItem.DistanceCovered}</div>
             <div className="package-location">{packageItem.location}</div>
-            <div className="package-itinerary">{packageItem.itinerary}</div>
             <div className="package-description">{packageItem.description}</div>
+            <div className="package-Itinerary">{packageItem.Itinerary}</div>
+            <div className="package-Package Inclusions">{packageItem.PackageInclusion}</div>
+            <div className="package-Package Price">{packageItem.PackagePrice}</div>
+            <div className="package-Note">{packageItem.Note}</div>
             <div className="package-duration">{packageItem.duration}</div>
           </div>
 

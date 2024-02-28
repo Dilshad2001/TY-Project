@@ -1,6 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect  } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const BookingPage = () => {
+  const location = useLocation(); // Step 2: Import useLocation
+  const { bookingInfo, totalAmount, packageItem } = location.state || {};
+
+  useEffect(() => {
+    // Access and log the passed data
+    console.log('Booking Info:', bookingInfo);
+    console.log('Total Amount:', totalAmount);
+    console.log('Package Item:', packageItem);
+  }, [bookingInfo, totalAmount, packageItem]);
+
   const [bookingDetails, setBookingDetails] = useState({
     name: '',
     email: '',
