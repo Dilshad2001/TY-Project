@@ -119,7 +119,7 @@ const Trekking = () => {
           </h3>
         </div>
 
-        <div className="Trekking secContent-grid container">
+        <div className="Trekking-grid container">
           {packagesTrekking.map((data) => (
             <Card
               className={"Trekking-card"}

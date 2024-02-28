@@ -1,14 +1,14 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './Home.scss'
 
 import video from '../../Assets/Main-Assets/home-video.mp4'
-import {GrLocation} from 'react-icons/gr'
-import {FiFacebook} from 'react-icons/fi'
-import {AiOutlineInstagram} from 'react-icons/ai'
-import {BiTrip} from 'react-icons/bi'
-import {HiFilter} from 'react-icons/hi'
-import {BsListTask} from 'react-icons/bs'
-import {TbApps} from 'react-icons/tb'
+import { GrLocation } from 'react-icons/gr'
+import { FiFacebook } from 'react-icons/fi'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { BiTrip } from 'react-icons/bi'
+import { HiFilter } from 'react-icons/hi'
+import { BsListTask } from 'react-icons/bs'
+import { TbApps } from 'react-icons/tb'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -23,13 +23,13 @@ const Home = () => {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
-   /*===========================================================*/
-  useEffect(()=>{
-    Aos.init({duration:2000})
+  /*===========================================================*/
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
 
-  },[])
-   /*===========================================================*/
-   const handleSearchInputChange = (e) => {
+  }, [])
+  /*===========================================================*/
+  const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);
   };
 
@@ -53,33 +53,16 @@ const Home = () => {
     setSearchResults(filteredResults);
   };
 
-    /*===========================================================*/
-    const handleIconClick = (iconType) => {
-      switch (iconType) {
-        case 'Bus':
-          // Change history.push('/bus-packages') to setSearchHistory([...searchHistory, '/bus-packages']);
-          setSearchHistory([...searchHistory, '/Bus-packages']);
-          break;
-        case 'train':
-          // Change history.push('/train-packages') to setSearchHistory([...searchHistory, '/train-packages']);
-          setSearchHistory([...searchHistory, '/train-packages']);
-          break;
-        case 'airplane':
-          // Change history.push('/airplane-packages') to setSearchHistory([...searchHistory, '/airplane-packages']);
-          setSearchHistory([...searchHistory, '/airplane-packages']);
-          break;
-        default:
-          break;
-      }
-    };
-  
+  /*===========================================================*/
+
+
 
 
   return (
     <section className='home'>
-    
+
       <div className="overlay"></div>
-      
+
       <video src={video} muted autoPlay loop type="video/mp4"></video>
 
       <div className='homeContent container'>
@@ -95,16 +78,16 @@ const Home = () => {
 
         </div>
 
-        <div  data-aos='fade-up' className='cardDiv grid'>
+        <div data-aos='fade-up' className='cardDiv grid'>
           <div className='destinationInput'>
             <label htmlFor='city'>Search your destination:</label>
             <div className='input flex'>
               <input type='text' placeholder='Enter name here....'
                 /*===========================================================*/
-                     value={searchInput}
-                    onChange={handleSearchInputChange}
-                 /*===========================================================*/
-               />
+                value={searchInput}
+                onChange={handleSearchInputChange}
+              /*===========================================================*/
+              />
 
               <GrLocation className='icon' />
 
@@ -112,22 +95,22 @@ const Home = () => {
             </div>
             {/*===========================================================*/}
             <button onClick={handleSearch}>Search</button>
-            
+
 
           </div>
-             {/* Display search results */}
-      <div>
-        {searchResults.length > 0 ? (
-          <ul>
-            {searchResults.map((result, index) => (
-              <li key={index}>{result}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>No results found.</p>
-        )}
-      </div>
-      {/*===========================================================*/}
+          {/* Display search results */}
+          <div>
+            {searchResults.length > 0 ? (
+              <ul>
+                {searchResults.map((result, index) => (
+                  <li key={index}>{result}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>No results found.</p>
+            )}
+          </div>
+          {/*===========================================================*/}
           <div className='dateInput'>
             <label htmlFor='date'>Select your date:</label>
             <div className='input flex'>
@@ -137,30 +120,36 @@ const Home = () => {
           </div>
 
 
-          <div>
-    {/* New icons for bus, train, and airplane */}
-        <FaBus
-          className='icon'
-          onClick={() => handleIconClick('bus')}
-        />
-        <IoTrain 
-          className='icon'
-          onClick={() => handleIconClick('train')}
-        />
-        <IoMdAirplane
-          className='icon'
-          onClick={() => handleIconClick('airplane')}
-        />
-      </div>
+          <div className='travelling-icons'>
+            {/* New icons for bus, train, and airplane */}
+            <a href='/packages/bus'>
+              <FaBus
+                className='icon'
+              />
+            </a>
+            <a href="/packages/train">
+
+              <IoTrain
+                className='icon'
+
+              />
+            </a>
+            <a href="/packages/flight">
+
+              <IoMdAirplane
+                className='icon'
+              />
+            </a>
+          </div>
 
 
           <div className="searchOptions flex">
-            <HiFilter className="icon"/>
+            <HiFilter className="icon" />
             <span>MORE FILTERS</span>
           </div>
         </div>
 
-        <div  data-aos='fade-up' className='homeFooterIcons flex'>
+        <div data-aos='fade-up' className='homeFooterIcons flex'>
           <div className='rightIcons'>
             <FiFacebook className="icon" />
             <AiOutlineInstagram className="icon" />
@@ -168,13 +157,13 @@ const Home = () => {
 
           </div>
           <div className='leftIcons'>
-          <BsListTask className="icon" />
-          <TbApps className="icon" />
+            <BsListTask className="icon" />
+            <TbApps className="icon" />
 
           </div>
         </div>
       </div>
-  
+
     </section>
   )
 }

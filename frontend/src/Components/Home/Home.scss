@@ -1,20 +1,20 @@
-:root{
-    --PrimaryColor:hsl(199,100%,33%);
-     --SecondaryColor:hsl(187,85%,43%);
-     --gradientColor: linear-gradient(to right, hsl(187,85%,43%,hsl(199,100%,33%)));
-     --whiteColor:hsl(0,0%,100%);
-     --blackColor:hsl(201,33%,16);
-     --textColor:hsl(240,4%,36%);
-     --whiteColorDeam:hsl(0,0%,93%);
-     --greyText:rgb(190,190,190);
-     --inputColor:rgb(239,239,239);
-     --bodyColor:rgb(240,240,246);
-     --cardBG:rgb(225,255,235);
-     
- }
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%, hsl(199, 100%, 33%)));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 255, 235);
+
+}
 
 
- .home{
+.home {
     width: 100%;
     position: relative;
     display: flex;
@@ -26,21 +26,21 @@
         display: flex;
         justify-content: space-around;
         margin-top: 20px;
-    
-        .icon {
-          font-size: 2rem;
-          cursor: pointer;
-          // Add any other styling as needed
-          color: #0b0a0a; // Example: Set icon color to white
-          margin: 0 10px; // Example: Add margin between icons
-        }
-      }
 
-    .Overlay{
+        .icon {
+            font-size: 2rem;
+            cursor: pointer;
+            // Add any other styling as needed
+            color: #0b0a0a; // Example: Set icon color to white
+            margin: 0 10px; // Example: Add margin between icons
+        }
+    }
+
+    .Overlay {
         position: absolute;
         height: 100%;
         width: 100%;
-        background: hsl(187,85%,43%);
+        background: hsl(187, 85%, 43%);
         top: 0;
         bottom: 0;
         z-index: 1;
@@ -48,7 +48,7 @@
 
     }
 
-    video{
+    video {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -58,7 +58,7 @@
 
     }
 
-    .homeContent{
+    .homeContent {
         width: 100%;
         padding: 5rem 1.5rem 3rem;
         display: flex;
@@ -68,55 +68,64 @@
         color: var(--whiteColor);
         z-index: 100;
 
-        .textDiv{
+        .textDiv {
             padding: 2rem 0;
 
-            .smallText{
+            .smallText {
                 font-size: 13px;
                 text-transform: uppercase;
             }
 
-            .homeTitle{
+            .homeTitle {
                 position: relative;
-                font-size:  1.8rem;
+                font-size: 1.8rem;
             }
 
 
         }
 
-        .cardDiv{
+        .cardDiv {
             // position: relative;
             padding: 2rem 1rem;
             background: var(--whiteColor);
             border-radius: 10px;
             gap: 1rem;
 
-            label{
+            .travelling-icons {
+                color: black;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            label {
                 display: block;
                 color: var(--textColor);
                 padding-bottom: 10px;
                 font-size: 13px;
                 font-weight: 500;
             }
-            .label_total{
+
+            .label_total {
                 justify-content: space-between;
                 align-items: center;
 
-                .total{
+                .total {
                     color: var(--textColor);
                     font-size: 18px;
                     padding-bottom: 10px;
 
                 }
+
+               
             }
 
-            .input{
+            .input {
                 height: 40px;
                 padding: 0 1rem;
                 background: var(--inputColor);
                 border-radius: 3rem;
 
-                input{
+                input {
                     background: none;
                     border: none;
                     outline: none;
@@ -124,26 +133,28 @@
                     font-size: 13px;
                     font-weight: 500;
                     color: black;
-                    &::placeholder{
+
+                    &::placeholder {
                         font-size: 13px;
 
                     }
                 }
 
-                .icon{
+                .icon {
                     font-size: 18px;
                     color: black;
                     margin-left: 10px;
                 }
 
-                .input[type=range]{
-                    background:hsl(187,85%,43%);;
+                .input[type=range] {
+                    background: hsl(187, 85%, 43%);
+                    ;
                 }
             }
 
 
 
-            .searchOptions{
+            .searchOptions {
                 position: absolute;
                 background: var(--PrimaryColor);
                 width: max-content;
@@ -155,15 +166,16 @@
                 transform: translate(-50%);
                 justify-content: center;
                 cursor: pointer;
-                
-                &:hover{
+
+                &:hover {
                     background: var(--PrimaryColor);
                 }
 
-                .icon{
+                .icon {
                     font-size: 18px;
                 }
-                span{
+
+                span {
                     font-size: 13px;
 
 
@@ -173,18 +185,19 @@
         }
 
 
-        .homeFooterIcons{
+        .homeFooterIcons {
             width: 100%;
             justify-content: space-between;
 
-            .icon{
+            .icon {
                 font-size: 20px;
                 margin: 0 5px;
                 color: var(--whiteColor);
                 font-weight: 600;
-                &:hover{
+
+                &:hover {
                     color: var(--PrimaryColor);
-                    
+
                 }
             }
         }
@@ -193,23 +206,23 @@
 
 
     }
- }
+}
 
- // media quries ============>
- @media screen and (min-width: 500px){
-    .home{
-        .homeContent{
-            .textDiv{
-                .smallText{
+// media quries ============>
+@media screen and (min-width: 500px) {
+    .home {
+        .homeContent {
+            .textDiv {
+                .smallText {
                     font-size: 16px;
                 }
 
-                .homeTitle{
+                .homeTitle {
                     position: relative;
                     font-size: 2.3rem;
                     width: max-content;
 
-                    &::after{
+                    &::after {
                         position: absolute;
                         content: '';
                         background: var(--SecondaryColor);
@@ -220,37 +233,37 @@
                         z-index: -1;
 
                     }
-                   
+
                 }
             }
 
-            .cardDiv{
-                grid-template-columns: repeat(2,1fr);
+            .cardDiv {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
- } 
+}
 
- @media screen and (min-width: 660px) {
-    .home{
-        .homeContent{
-            .cardDiv{
+@media screen and (min-width: 660px) {
+    .home {
+        .homeContent {
+            .cardDiv {
                 padding: 2rem 1rem;
-                grid-template-columns: repeat(3,1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
-    
- }
 
- @media screen and (min-width: 940px) {
-    .home{
+}
+
+@media screen and (min-width: 940px) {
+    .home {
         height: 85vh;
-    }   
- }
+    }
+}
 
- @media screen and (min-width: 1240px) {
-    .home{
+@media screen and (min-width: 1240px) {
+    .home {
         height: 80vh;
-    }   
- }
+    }
+}

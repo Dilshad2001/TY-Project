@@ -8,10 +8,12 @@ import SignUp from './Components/Authentication/SignUp/SignUp';
 import Packages from './Components/Packages/Packages';
 import PackageDetail from './Components/Packages/PackageDetail'; // Import the PackageDetail Component
 import Trekking from './Components/Trekking/Trekking';
-import Footer from './Components/Footer/Footer';
 import  About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import BookNow from  './Components/Book Now/BookNow'
+import BusPackage from './Components/Packages/Bus/BusPackage';
+import TrainPackage from './Components/Packages/Train/TrainPackage';
+import FlightPackage from './Components/Packages/Flight/FlightPackage';
 
 const App = () => {
   return (
@@ -22,8 +24,11 @@ const App = () => {
         <Route path="/" exact Component={home} />
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={SignUp} />
-        <Route path="/BookNow" Component={BookNow} />
+        <Route path="/book-now" Component={BookNow} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="/packages/bus" element={<BusPackage />} />
+        <Route path="/packages/train" element={<TrainPackage />} />
+        <Route path="/packages/flight" element={<FlightPackage />} />
         <Route path="/package/:id" element={<PackageDetail />} />
         <Route path='/Trekking' element={<Trekking />} />
         <Route path='/About' element={<About />} />

@@ -32,9 +32,7 @@
 
 /* Styling for the fees and grade section within the card */
 .location-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 5px;
 }
 
 .grade {
