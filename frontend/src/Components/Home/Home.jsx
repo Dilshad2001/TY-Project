@@ -137,15 +137,21 @@ const Home = () => {
           </div>
 
 
-          <div className='PriceInput'>
-            <div className='label_total flex'>
-              <label htmlFor='price'>max price:</label>
-              <h3 className='total'>₹5000</h3>
-            </div>
-            <div className='input flex'>
-              <input type='range' max='5000' min='1000'></input>
-            </div>
-          </div>
+          <div>
+    {/* New icons for bus, train, and airplane */}
+        <FaBus
+          className='icon'
+          onClick={() => handleIconClick('bus')}
+        />
+        <IoTrain 
+          className='icon'
+          onClick={() => handleIconClick('train')}
+        />
+        <IoMdAirplane
+          className='icon'
+          onClick={() => handleIconClick('airplane')}
+        />
+      </div>
 
 
           <div className="searchOptions flex">
@@ -168,24 +174,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-    {/* New icons for bus, train, and airplane */}
-        <FaBus
-          className='icon'
-          onClick={() => handleIconClick('bus')}
-        />
-        <IoTrain 
-          className='icon'
-          onClick={() => handleIconClick('train')}
-        />
-        <IoMdAirplane
-          className='icon'
-          onClick={() => handleIconClick('airplane')}
-        />
-      </div>
-
-
-
+  
     </section>
   )
 }

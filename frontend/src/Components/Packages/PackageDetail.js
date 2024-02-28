@@ -1,47 +1,62 @@
 // PackageDetail.js
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import './PackageDetail.css';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import "./PackageDetail.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
-
-import { packagesTravelling, packagesRafting, packagesTrekking, packagesHotels, packagesBus, packagesTrain, packagesFlight} from '../../Components/Packages/PackageData';
+import {
+  packagesTravelling,
+  packagesRafting,
+  packagesTrekking,
+  packagesHotels,
+  packagesBus,
+  packagesTrain,
+  packagesFlight,
+} from "../../Components/Packages/PackageData";
 
 const renderDetails = (details) => {
   return details.map((detail, index) => (
     <div key={index}>
-      {detail.day && <div><strong>Day:</strong> {detail.day}</div>}
+      {detail.day && (
+        <div>
+          <strong>Day:</strong> {detail.day}
+        </div>
+      )}
       {detail.details && (
         <div>
-          <strong>Details:</strong> {Array.isArray(detail.details) ? renderDetails(detail.details) : detail.details}
+          <strong>Details:</strong>{" "}
+          {Array.isArray(detail.details)
+            ? renderDetails(detail.details)
+            : detail.details}
         </div>
       )}
     </div>
   ));
 };
 
-
 const PackageDetail = () => {
-  const { id } = useParams(); // Get the package ID from the URL
-    // Combine all packages into a single array
-    const allPackages = [
-      ...packagesTravelling.map((item) => ({ ...item, type: 'travelling' })),
-      ...packagesRafting.map((item) => ({ ...item, type: 'rafting' })),
-      ...packagesTrekking.map((item) => ({ ...item, type: 'trekking' })),
-      ...packagesHotels.map((item) => ({ ...item, type: 'hotels' })),
-      ...packagesBus.map((item) => ({ ...item, type: 'Bus' })),
-      ...packagesTrain.map((item) => ({ ...item, type: 'Train' })),
-      ...packagesFlight.map((item) => ({ ...item, type: 'Flight' })),
-    ];
+  const { id } = useParams(); 
+  const fifteenDaysFromNow = new Date();
+  fifteenDaysFromNow.setDate(fifteenDaysFromNow.getDate() + 15);
+
+  const allPackages = [
+    ...packagesTravelling.map((item) => ({ ...item, type: "travelling" })),
+    ...packagesRafting.map((item) => ({ ...item, type: "rafting" })),
+    ...packagesTrekking.map((item) => ({ ...item, type: "trekking" })),
+    ...packagesHotels.map((item) => ({ ...item, type: "hotels" })),
+    ...packagesBus.map((item) => ({ ...item, type: "Bus" })),
+    ...packagesTrain.map((item) => ({ ...item, type: "Train" })),
+    ...packagesFlight.map((item) => ({ ...item, type: "Flight" })),
+  ];
   const packageItem = allPackages.find((item) => item.id === parseInt(id));
 
   const [bookingInfo, setBookingInfo] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    numberOfPeople: 1,
-    monthOfTravel: '',
+    name: "",
+    email: "",
+    phone: "",
+    numberOfPeople: '',
+    monthOfTravel: "",
   });
 
   const [confirmationVisible, setConfirmationVisible] = useState(false);
@@ -55,61 +70,95 @@ const PackageDetail = () => {
   };
 
   const handleBooking = () => {
-     // Form validation
-     if (!bookingInfo.name || !bookingInfo.email || !bookingInfo.phone || !bookingInfo.monthOfTravel) {
-      alert('Please fill in all the required fields.');
+    if (!isValidInput()) {
+      alert('Please fill in all the required fields correctly.');
       return;
     }
-    const calculatedTotalAmount = packageItem.price * bookingInfo.numberOfPeople;
-    setTotalAmount(calculatedTotalAmount);
+   
+    const price = parseFloat(packageItem.price);
+    const numberOfPeople = parseInt(bookingInfo.numberOfPeople);
 
-    // Display the confirmation message
-      setConfirmationVisible(true);
-    };
+    console.log('price:', price);
+    console.log('numberOfPeople:', numberOfPeople);
+    
+
+    if (isNaN(price) || isNaN(numberOfPeople) || price <= 0 || numberOfPeople <= 0) {
+      alert('Invalid package details. Please check the price and number of people.');
+      return;
+    }
+    const calculatedTotalAmount = price * numberOfPeople;
+
+    if (isNaN(calculatedTotalAmount)) {
+      alert('Invalid calculation. Please check package details.');
+      return;
+    }
   
-    const closeConfirmation = () => {
-      // Close the confirmation message
-      setConfirmationVisible(false);
-    };
-    const handleDateChange = (date) => {
-      // Your validation logic here to check if the date is within the next 15 days
-      const currentDate = new Date();
-      const fifteenDaysFromNow = new Date();
-      fifteenDaysFromNow.setDate(currentDate.getDate() + 15);
 
-      if (date >= currentDate && date <= fifteenDaysFromNow) {
-        setBookingInfo((prevInfo) => ({ ...prevInfo, monthOfTravel: date }));
-      } else {
-        // Handle invalid date (show error message, etc.)
-        console.error('Invalid date selection');
-      }
-    };
+
+    setTotalAmount(calculatedTotalAmount);
+    setConfirmationVisible(true);
+  };
+
+  const closeConfirmation = () => {
+    setConfirmationVisible(false);
+  };
+  const handleDateChange = (date) => {
+    const currentDate = new Date();
+    
+
+    if (date >= currentDate && date <= fifteenDaysFromNow) {
+      // Convert the date to a string before storing it in state
+      const formattedDate = date.toISOString().split("T")[0];
+      setBookingInfo((prevInfo) => ({
+        ...prevInfo,
+        monthOfTravel: formattedDate,
+      }));
+    } else {
+      console.error("Invalid date selection");
+    }
+  };
+  const isValidInput = () => {
+    // Simple email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const validEmail = emailRegex.test(bookingInfo.email);
+
+    // Simple phone number validation (10 digits)
+    const validPhone = /^\d{10}$/.test(bookingInfo.phone);
+
+    // Number of people should be between 1 and 20
+    const validNumberOfPeople =
+      bookingInfo.numberOfPeople >= 1 && bookingInfo.numberOfPeople <= 20;
+
+    // Name should not contain numbers
+    const validName = /^[^\d]+$/.test(bookingInfo.name);
+
+    return validEmail && validPhone && validNumberOfPeople && validName;
+  };
 
   return (
     <div className="package-detail-container">
       {packageItem && (
         <>
           <h2>{packageItem.title}</h2>
-          <img className="package-image" src={packageItem.image} alt={packageItem.title} />
+          <img
+            className="package-image"
+            src={packageItem.image}
+            alt={packageItem.title}
+          />
           <div className="package-details">
             <div className="package-price">{packageItem.price}</div>
             <div className="package-grade">{packageItem.grade}</div>
             <div className="package-DifficultyLevel">{packageItem.DifficultyLevel}</div>
             <div className="package- DistanceCovered">{packageItem.DistanceCovered}</div>
             <div className="package-location">{packageItem.location}</div>
-            <div className="package-itinerary">{packageItem.itinerary}</div>      
+            <div className="package-itinerary">{packageItem.itinerary}</div>
             <div className="package-description">{packageItem.description}</div>
             <div className="package-duration">{packageItem.duration}</div>
           </div>
 
-          <div className="additional-details"> 
-          {packageItem.details && (
-            <>
-            {renderDetails(packageItem.details)}
-            </>
-            )}
-            </div>
-
+          <div className="additional-details">
+            {packageItem.details && <>{renderDetails(packageItem.details)}</>}
+          </div>
 
           <div className="booking-form">
             <h3>Book this Package</h3>
@@ -142,14 +191,14 @@ const PackageDetail = () => {
                 value={bookingInfo.numberOfPeople}
                 onChange={handleInputChange}
               />
-              
-                  <div className="date-picker-container">
+
+              <div className="date-picker-container">
                 <label>Month of Travel:</label>
                 <DatePicker
-                  selected={bookingInfo.monthOfTravel}
+                  selected={bookingInfo.monthOfTravel ? new Date(bookingInfo.monthOfTravel): null}
                   onChange={handleDateChange}
                   minDate={new Date()}
-                  maxDate={new Date(new Date().setDate(new Date().getDate() + 15))}
+                  maxDate={fifteenDaysFromNow}
                   dateFormat="yyyy-MM-dd"
                 />
               </div>
@@ -158,19 +207,22 @@ const PackageDetail = () => {
               </button>
             </form>
           </div>
-          <div className="confirmation-message" style={{ display: confirmationVisible ? 'block' : 'none' }}>
-              <p>Thank you for booking {packageItem.title}!</p>
-              <p>Your booking details:</p>
-              <p>Name: {bookingInfo.name}</p>
-              <p>Email: {bookingInfo.email}</p>
-              <p>Phone: {bookingInfo.phone}</p>
-              <p>Number of People: {bookingInfo.numberOfPeople}</p>
-              <p>Month of Travel: {bookingInfo.monthOfTravel}</p>
-              <p>Total Amount: ₹{totalAmount}</p>
-              <button type="button" onClick={closeConfirmation}>
+          <div
+            className="confirmation-message"
+            style={{ display: confirmationVisible ? "block" : "none" }}
+          >
+            <p>Thank you for booking {packageItem.title}!</p>
+            <p>Your booking details:</p>
+            <p>Name: {bookingInfo.name}</p>
+            <p>Email: {bookingInfo.email}</p>
+            <p>Phone: {bookingInfo.phone}</p>
+            <p>Number of People: {bookingInfo.numberOfPeople}</p>
+            <p>Month of Travel: {bookingInfo.monthOfTravel}</p>
+            <p>Total Amount: ₹{totalAmount}</p>
+            <button type="button" onClick={closeConfirmation}>
               Close
             </button>
-            </div>
+          </div>
         </>
       )}
     </div>

@@ -81,8 +81,7 @@ const packagesTravelling = [
     location: "Goa",
     grade: "BEACH RELAX",
     price: "₹15,000",
-    description:
-      "the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s",
+    description:"the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s",
   },
   {
     id: 2,
@@ -91,8 +90,7 @@ const packagesTravelling = [
     location: "Agra",
     grade: "HISTORICAL EXPLORATION",
     price: "₹25,000",
-    description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.",
+    description:"The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.",
   },
 
   {
@@ -102,8 +100,7 @@ const packagesTravelling = [
     location: " Manali",
     grade: "ADVENTURE ESCAPE",
     price: "₹30,000",
-    description:
-      "Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.",
+    description:"Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.",
   },
 
   {
@@ -113,8 +110,7 @@ const packagesTravelling = [
     location: "Shimla",
     grade: "HILL STATION RELAXATION",
     price: "₹35,237",
-    description:
-      "Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.",
+    description:"Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.",
   },
 
   {
@@ -124,8 +120,7 @@ const packagesTravelling = [
     location: "Sikkim",
     grade: " MOUNTAIN DISCOVERY",
     price: "₹40,000",
-    description:
-      "The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.",
+    description:"The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.",
   },
   {
     id: 6,
@@ -134,8 +129,7 @@ const packagesTravelling = [
     location: " Jaisalmer",
     grade: "DESERT ADVENTURE",
     price: "₹45,000",
-    description:
-      "This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.",
+    description:"This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.",
   },
 
   {
@@ -145,8 +139,7 @@ const packagesTravelling = [
     location: "Amritsar",
     grade: "CULTURAL ENRICHMENT",
     price: "₹50,000",
-    description:
-      "Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.",
+    description:"Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.",
   },
 
   {
@@ -156,8 +149,7 @@ const packagesTravelling = [
     location: "Jaipur",
     grade: "ROYAL INDULGENCE",
     price: "₹55,000",
-    description:
-      "Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber",
+    description:"Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber",
   },
   // Add more packages as needed
 ];
@@ -171,8 +163,7 @@ const packagesRafting = [
     grade: "RIVER RAFTING THRILL",
     DifficultyLevel: "High",
     DistanceCovered: "9 km - 36 km",
-    description:
-      " Indulge in the adrenaline-pumping experience of white water rafting amidst the picturesque landscapes of Kullu.",
+    description:" Indulge in the adrenaline-pumping experience of white water rafting amidst the picturesque landscapes of Kullu.",
   },
   {
     id: 10,
@@ -182,9 +173,8 @@ const packagesRafting = [
     price: "₹15,000",
     grade: "THRILLING GANGES RAFTING",
     DifficultyLevel: "Low",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "On an exhilarating white water rafting adventure along the sacred Ganges River in the beautiful town of Rishikesh.",
+    DistanceCovered: "8 km - 16 km",
+    description:"On an exhilarating white water rafting adventure along the sacred Ganges River in the beautiful town of Rishikesh.",
   },
   {
     id: 11,
@@ -194,9 +184,8 @@ const packagesRafting = [
     price: "₹12,000",
     grade: "WHITE WATER THRILLS",
     DifficultyLevel: "Medium",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "On an exciting white water rafting adventure in the beautiful hills of Darjeeling, combining thrilling rapids with the picturesque landscapes of the region.",
+    DistanceCovered: "15 km - 60 km",
+    description:"On an exciting white water rafting adventure in the beautiful hills of Darjeeling, combining thrilling rapids with the picturesque landscapes of the region.",
   },
   {
     id: 12,
@@ -206,9 +195,8 @@ const packagesRafting = [
     price: "₹10,000",
     grade: "ADVENTURE ON THE KAUVERI",
     DifficultyLevel: "High",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "Immerse yourself in the lush landscapes of Coorg while enjoying the thrill of white water rafting on the Kauveri River, combining adventure with the natural beauty of the region.",
+    DistanceCovered: "19 km - 42 km",
+    description:"Immerse yourself in the lush landscapes of Coorg while enjoying the thrill of white water rafting on the Kauveri River, combining adventure with the natural beauty of the region.",
   },
   {
     id: 13,
@@ -218,9 +206,8 @@ const packagesRafting = [
     price: "₹18,999",
     grade: "THRILLING WATERS",
     DifficultyLevel: "High",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "Experience the thrill of white water rafting in the scenic rivers of Maharashtra, combining adrenaline-pumping rapids with the natural beauty of the region.",
+    DistanceCovered: "7 km - 26 km",
+    description:"Experience the thrill of white water rafting in the scenic rivers of Maharashtra, combining adrenaline-pumping rapids with the natural beauty of the region.",
   },
   {
     id: 14,
@@ -230,9 +217,8 @@ const packagesRafting = [
     price: "₹15,999",
     grade: "ADVENTURE ON THE YAMUNA",
     DifficultyLevel: "High",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "On an exhilarating white water rafting adventure on the Yamuna River, combining the thrill of rapids with the scenic beauty of Northern India.",
+    DistanceCovered: "4 km - 32 km",
+    description:"On an exhilarating white water rafting adventure on the Yamuna River, combining the thrill of rapids with the scenic beauty of Northern India.",
   },
   {
     id: 15,
@@ -242,9 +228,8 @@ const packagesRafting = [
     price: "₹25,999",
     grade: "WILD SPITI WATERS",
     DifficultyLevel: "Medium",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      " Experience the thrill of white water rafting amidst the rugged and breathtaking landscapes of Spiti Valley, where the Spiti River offers an adventurous journey with exhilarating ",
+    DistanceCovered: "2 km - 19 km",
+    description:" Experience the thrill of white water rafting amidst the rugged and breathtaking landscapes of Spiti Valley, where the Spiti River offers an adventurous journey with exhilarating ",
   },
   {
     id: 16,
@@ -254,9 +239,8 @@ const packagesRafting = [
     price: "₹23,000",
     grade: "THRILLING ARUNACHAL WATERS",
     DifficultyLevel: "Low",
-    DistanceCovered: "9 km - 36 km",
-    description:
-      "On an unforgettable white water rafting adventure in the pristine rivers of Arunachal Pradesh, surrounded by lush landscapes and untouched natural beauty.",
+    DistanceCovered: "5 km - 13 km",
+    description:"On an unforgettable white water rafting adventure in the pristine rivers of Arunachal Pradesh, surrounded by lush landscapes and untouched natural beauty.",
   },
 
   // Add more packages as needed
@@ -354,8 +338,7 @@ const packagesHotels = [
     duration: "8 Days & 7 Nights",
     price: "₹15,000 per Night",
     grade: "Rating: 5-star Deluxe",
-    description:
-      "Nestled in serene south Goa, amidst 1,82,109 m² of lush landscapes & lagoons, the resort offers direct access to the pristine Arossim beach Indo-Portuguese village style architecture Kaya Kalp - The Royal Spa 6 Exotic dining destinations",
+    description:"Nestled in serene south Goa, amidst 1,82,109 m² of lush landscapes & lagoons, the resort offers direct access to the pristine Arossim beach Indo-Portuguese village style architecture Kaya Kalp - The Royal Spa 6 Exotic dining destinations",
   },
   {
     id: 26,

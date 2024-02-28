@@ -22,6 +22,20 @@
     justify-content: center;
     margin: auto;
 
+    .iconContainer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    
+        .icon {
+          font-size: 2rem;
+          cursor: pointer;
+          // Add any other styling as needed
+          color: #0b0a0a; // Example: Set icon color to white
+          margin: 0 10px; // Example: Add margin between icons
+        }
+      }
+
     .Overlay{
         position: absolute;
         height: 100%;

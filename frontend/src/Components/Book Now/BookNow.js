@@ -1,103 +1,58 @@
 import React, { useState } from 'react';
 
-const BookNowPage = () => {
+const BookingPage = () => {
   const [bookingDetails, setBookingDetails] = useState({
-    fullName: '',
+    name: '',
     email: '',
-    phoneNumber: '',
-    numberOfParticipants: 1,
-    selectedPackage: '',
-    additionalComments: '',
+    trekkingPackage: '',
+    paymentAmount: 100, // Dummy payment amount in RUPESS
   });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setBookingDetails((prevDetails) => ({ ...prevDetails, [name]: value }));
+    setBookingDetails({ ...bookingDetails, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your booking logic here
-    console.log('Booking submitted:', bookingDetails);
-    // You can redirect the user, show a confirmation message, or perform other actions after submission
+  const handlePayment = () => {
+    // In a real application, you would integrate with a secure payment gateway here
+    simulateEmailConfirmation(); // Simulate sending confirmation email
+  };
+
+  const simulateEmailConfirmation = () => {
+    // Simulate sending a confirmation email using a dummy email API
+    fetch('https://dummy-email-api.com/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        to: bookingDetails.email,
+        subject: 'Trekking Adventure Booking Confirmation',
+        body: `Dear ₹{bookingDetails.name},\n\nThank you for booking the ₹{bookingDetails.trekkingPackage} adventure! Your payment of $${bookingDetails.paymentAmount} has been received.\n\nEnjoy your trek!\n\nBest regards,\nThe Adventure Team`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Email confirmation sent:', data);
+        alert('Payment successful! Confirmation email sent to your registered email.');
+      })
+      .catch((error) => {
+        console.error('Error sending email confirmation:', error);
+        alert('Payment successful! Unable to send confirmation email at the moment.');
+      });
   };
 
   return (
-    <div className="book-now-page">
-      <section className="booking-form">
-        <div className="form-container">
-          <h1>Book Your Adventure</h1>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="fullName">Full Name:</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              value={bookingDetails.fullName}
-              onChange={handleInputChange}
-              required
-            />
-
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={bookingDetails.email}
-              onChange={handleInputChange}
-              required
-            />
-
-            <label htmlFor="phoneNumber">Phone Number:</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={bookingDetails.phoneNumber}
-              onChange={handleInputChange}
-              required
-            />
-
-            <label htmlFor="numberOfParticipants">Number of Participants:</label>
-            <input
-              type="number"
-              id="numberOfParticipants"
-              name="numberOfParticipants"
-              value={bookingDetails.numberOfParticipants}
-              onChange={handleInputChange}
-              min="1"
-              required
-            />
-
-            <label htmlFor="selectedPackage">Select Package:</label>
-            <select
-              id="selectedPackage"
-              name="selectedPackage"
-              value={bookingDetails.selectedPackage}
-              onChange={handleInputChange}
-              required
-            >
-              <option value="">Select a Package</option>
-              <option value="basic">Basic Adventure</option>
-              <option value="premium">Premium Expedition</option>
-              {/* Add more options as needed */}
-            </select>
-
-            <label htmlFor="additionalComments">Additional Comments:</label>
-            <textarea
-              id="additionalComments"
-              name="additionalComments"
-              value={bookingDetails.additionalComments}
-              onChange={handleInputChange}
-              rows="4"
-            ></textarea>
-
-            <button type="submit">Book Now</button>
-          </form>
-        </div>
-      </section>
+    <div>
+      <h2>Best Book Now for Your Adventure</h2>
+      <form>
+        {/* ... (unchanged form fields) */}
+        <button type="button" onClick={handlePayment}>
+          Proceed to Payment
+        </button>
+      </form>
     </div>
   );
 };
 
-export default BookNowPage;
+export default BookingPage;

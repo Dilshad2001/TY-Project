@@ -11,7 +11,7 @@ import Trekking from './Components/Trekking/Trekking';
 import Footer from './Components/Footer/Footer';
 import  About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
-//import BookNow from  './Components/Book Now/BookNow'
+import BookNow from  './Components/Book Now/BookNow'
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/" exact Component={home} />
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={SignUp} />
+        <Route path="/BookNow" Component={BookNow} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/package/:id" element={<PackageDetail />} />
         <Route path='/Trekking' element={<Trekking />} />
