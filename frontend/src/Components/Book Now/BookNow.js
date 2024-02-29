@@ -1,12 +1,13 @@
-import React, { useState,useEffect  } from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import './BookNow.css'
 
 const BookingPage = () => {
-  const location = useLocation(); // Step 2: Import useLocation
+  const location = useLocation();
   const { bookingInfo, totalAmount, packageItem } = location.state || {};
 
   useEffect(() => {
-    // Access and log the passed data
     console.log('Booking Info:', bookingInfo);
     console.log('Total Amount:', totalAmount);
     console.log('Package Item:', packageItem);
@@ -16,7 +17,8 @@ const BookingPage = () => {
     name: '',
     email: '',
     trekkingPackage: '',
-    paymentAmount: 100, // Dummy payment amount in RUPESS
+    paymentAmount: totalAmount || 0, // Use the passed totalAmount or default to 0
+    paymentStatus: false, // Track payment status
   });
 
   const handleInputChange = (e) => {
@@ -29,6 +31,14 @@ const BookingPage = () => {
     simulateEmailConfirmation(); // Simulate sending confirmation email
   };
 
+  const simulatePaymentConfirmation = () => {
+    // Simulate processing payment using a dummy payment API
+    // Assuming payment is successful, update payment status and send email confirmation
+    setBookingDetails((prevDetails) => ({ ...prevDetails, paymentStatus: true }));
+    simulateEmailConfirmation();
+    simulateEmailConfirmation();
+  };
+
   const simulateEmailConfirmation = () => {
     // Simulate sending a confirmation email using a dummy email API
     fetch('https://dummy-email-api.com/send', {
@@ -39,7 +49,7 @@ const BookingPage = () => {
       body: JSON.stringify({
         to: bookingDetails.email,
         subject: 'Trekking Adventure Booking Confirmation',
-        body: `Dear ₹{bookingDetails.name},\n\nThank you for booking the ₹{bookingDetails.trekkingPackage} adventure! Your payment of $${bookingDetails.paymentAmount} has been received.\n\nEnjoy your trek!\n\nBest regards,\nThe Adventure Team`,
+        body: `Dear ${bookingDetails.name},\n\nThank you for booking the ${bookingDetails.trekkingPackage} adventure! Your payment of $${bookingDetails.paymentAmount} has been received.\n\nEnjoy your trek!\n\nBest regards,\nThe Adventure Team`,
       }),
     })
       .then((response) => response.json())
@@ -52,18 +62,55 @@ const BookingPage = () => {
         alert('Payment successful! Unable to send confirmation email at the moment.');
       });
   };
-
   return (
     <div>
-      <h2>Best Book Now for Your Adventure</h2>
+      <h2>Complete Your Adventure Booking</h2>
       <form>
-        {/* ... (unchanged form fields) */}
+        {/* Display the received package details */}
+        {packageItem ? (
+          <>
+        <h3>Package Details:</h3>
+        <p>Title: {packageItem.title}</p>
+        {/* Add other package details as needed */}
+        </>
+        ) : null}
+        {/* Allow user to update their details if needed */}
+        <h3>Your Details:</h3>
+        <label>Name:</label>
+        <input type="text" name="name" value={bookingDetails.name} onChange={handleInputChange} />
+
+        <label>Email:</label>
+        <input type="email" name="email" value={bookingDetails.email} onChange={handleInputChange} />
+
+        <label>Trekking Package:</label>
+        <input
+          type="text"
+          name="trekkingPackage"
+          value={bookingDetails.trekkingPackage || (packageItem ? packageItem.title : '')}
+          readOnly
+        />
+
+        <label>Total Amount:</label>
+        <input
+          type="number"
+          name="paymentAmount"
+          value={bookingDetails.paymentAmount}
+          readOnly
+        />
+
         <button type="button" onClick={handlePayment}>
           Proceed to Payment
         </button>
       </form>
+
+      {bookingDetails.paymentStatus && (
+        <div>
+          <p>Payment Successful! Confirmation details sent to your email and phone.</p>
+        </div>
+      )}
     </div>
   );
 };
+  
 
 export default BookingPage;
