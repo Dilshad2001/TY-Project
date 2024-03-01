@@ -5,23 +5,21 @@ import './BookNow.css'
 
 const BookNow = () => {
   const location = useLocation();
-  const { bookingInfo, calculatedTotalAmount,simplifiedPackageItem} = location.state || {};
+  const { bookingInfo, calculatedTotalAmount,simplifiedPackageItem,numberOfPeople} = location.state || {};
 
   useEffect(() => {
     console.log('Booking Info:', bookingInfo);
     console.log('Total Amount:', calculatedTotalAmount);
     console.log('PaymentItem',simplifiedPackageItem)
-  }, [bookingInfo, calculatedTotalAmount,simplifiedPackageItem]);
+    console.log('Number of people',numberOfPeople)
+  }, [bookingInfo, calculatedTotalAmount,simplifiedPackageItem,numberOfPeople]);
 
   const [bookingDetails, setBookingDetails] = useState({
     paymentAmount: calculatedTotalAmount || 0, // Use the passed totalAmount or default to 0
     paymentStatus: false, // Track payment status
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setBookingDetails({ ...bookingDetails, [name]: value });
-  };
+  
 
   const handlePayment = () => {
     // In a real application, you would integrate with a secure payment gateway here
@@ -45,7 +43,7 @@ const BookNow = () => {
       },
       body: JSON.stringify({
         to: bookingDetails.email,
-        subject: 'Trekking Adventure Booking Confirmation',
+        subject: 'Package Booking Confirmation',
         body: `Dear ${bookingDetails.name},\n\nThank you for booking the ${bookingDetails.trekkingPackage} adventure! Your payment of $${bookingDetails.paymentAmount} has been received.\n\nEnjoy your trek!\n\nBest regards,\nThe Adventure Team`,
       }),
     })
@@ -74,12 +72,13 @@ const BookNow = () => {
         {/* Allow user to update their details if needed */}
         <h3>Your Details:</h3>
         <p>Name: {bookingInfo.name}</p>
-
         <p>Email: {bookingInfo.email}</p>
+        <p>Number of people: {numberOfPeople}</p>
+
         <label>Package:</label>
         <input
           type="text"
-          name="trekkingPackage"
+          name="Package"
           value={bookingDetails.trekkingPackage || (simplifiedPackageItem ? simplifiedPackageItem.title : '')}
           readOnly
         />

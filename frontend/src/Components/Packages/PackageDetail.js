@@ -117,7 +117,7 @@ const PackageDetail = () => {
     console.log(simplifiedPackageItem)
     setTotalAmount(calculatedTotalAmount); 
     setConfirmationVisible(true);
-    navigate(`/Book-Now`, { state: { bookingInfo, calculatedTotalAmount, simplifiedPackageItem } });
+    navigate(`/Book-Now`, { state: { bookingInfo, calculatedTotalAmount,numberOfPeople, simplifiedPackageItem } });
   };
   
 

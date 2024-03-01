@@ -155,7 +155,7 @@ const packagesTravelling = [
     title: "Taj Mahal",
     location: "Agra",
     grade: "HISTORICAL EXPLORATION",
-    price: "₹25,000",
+    price: "25000",
     description:"The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.",
     Itinerary:
     <div>
@@ -237,7 +237,7 @@ const packagesTravelling = [
     title: "Jogni Waterfall Road",
     location: " Manali",
     grade: "ADVENTURE ESCAPE",
-    price: "₹30,000",
+    price: "30000",
     description:"Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.",
     Itinerary:
     <div>
@@ -343,7 +343,7 @@ const packagesTravelling = [
     title: "Shaily Peak",
     location: "Shimla",
     grade: "HILL STATION RELAXATION",
-    price: "₹35,237",
+    price: "35237",
     description:"Shimla, city, capital of Himachal Pradesh state, northwestern India. The city lies northeast of Chandigarh on a ridge of the Himalayan foothills, at an elevation of about 7,100 feet (2,200 metres). Shimla was built by the British on land they had retained after the Gurkha War of 1814–16 and was used for resting troops.",
     Itinerary:
     <div>
@@ -449,7 +449,7 @@ const packagesTravelling = [
     title: "Buddha Park",
     location: "Sikkim",
     grade: " MOUNTAIN DISCOVERY",
-    price: "₹40,000",
+    price: "40000",
     description:"The Buddha Park of Ravangla, also known as Tathagata Tsal, is situated near Rabong (Ravangla) in South Sikkim district, Sikkim, India. It was constructed between 2006 and 2013 and features a 130-foot (40 m) high statue of the Buddha as its centerpiece.",
     Itinerary:
     <div>
@@ -554,7 +554,7 @@ const packagesTravelling = [
     title: "Bada Bagh ",
     location: " Jaisalmer",
     grade: "DESERT ADVENTURE",
-    price: "₹45,000",
+    price: "45000",
     description:"This is a popular site because it is a garden that has the cenotaphs of all the Maharajas and other prestigious family members of Jaisalmer; all royal Rajputs kings of 6 centuries! Bada Bagh is actually located on a small hillock and the entrance to the cenotaphs is set at the bottom of the hill.",
     Itinerary:
     <div>
@@ -659,7 +659,7 @@ const packagesTravelling = [
     title: "Golden Temple",
     location: "Amritsar",
     grade: "CULTURAL ENRICHMENT",
-    price: "₹50,000",
+    price: "50000",
     description:"Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs principal place of worship—the Harmandir Sahib, or Golden Temple.",
     Itinerary:
     <div>
@@ -765,7 +765,7 @@ const packagesTravelling = [
     title: "Jal Mahal",
     location: "Jaipur",
     grade: "ROYAL INDULGENCE",
-    price: "₹55,000",
+    price: "55000",
     description:"Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace was originally constructed around 1699; the building and the lake around it were later renovated and enlarged in the early 18th century by Maharaja Jai Singh II of Amber",
     Itinerary:
     <div>
@@ -872,7 +872,7 @@ const packagesRafting = [
     title: "Kullu White Water Adventure",
     location: "Kullu",
     image: imgRafting9, // Use the imported image
-    price: "₹9,999",
+    price: "9999",
     grade: "RIVER RAFTING THRILL",
     DifficultyLevel: "High",
     DistanceCovered: "9 km - 36 km",
@@ -968,7 +968,7 @@ const packagesRafting = [
     title: "Ganga Rapids Expedition",
     location: "Rishikesh, Uttarakhand",
     image: imgRafting10,
-    price: "₹15,000",
+    price: "15000",
     grade: "THRILLING GANGES RAFTING",
     DifficultyLevel: "Low",
     DistanceCovered: "8 km - 16 km",
@@ -1063,7 +1063,7 @@ const packagesRafting = [
     title: "Darjeeling Teesta River",
     location: "Darjeeling",
     image: imgRafting11,
-    price: "₹12,000",
+    price: "12000",
     grade: "WHITE WATER THRILLS",
     DifficultyLevel: "Medium",
     DistanceCovered: "15 km - 60 km",
@@ -1158,7 +1158,7 @@ const packagesRafting = [
     title: "Coorg Rapids Expedition",
     location: "Karnataka",
     image: imgRafting12,
-    price: "₹10,000",
+    price: "10000",
     grade: "ADVENTURE ON THE KAUVERI",
     DifficultyLevel: "High",
     DistanceCovered: "19 km - 42 km",
@@ -1253,7 +1253,7 @@ const packagesRafting = [
     title: "Maharashtra Kundalika River",
     location: "Maharashtra",
     image: imgRafting13,
-    price: "₹18,999",
+    price: "18999",
     grade: "THRILLING WATERS",
     DifficultyLevel: "High",
     DistanceCovered: "7 km - 26 km",
@@ -1347,7 +1347,7 @@ const packagesRafting = [
     title: "Yamuna Rapids Expedition ",
     location: "Uttarakhand , Northern India",
     image: imgRafting14,
-    price: "₹15,999",
+    price: "15999",
     grade: "ADVENTURE ON THE YAMUNA",
     DifficultyLevel: "High",
     DistanceCovered: "4 km - 32 km",
@@ -1443,7 +1443,7 @@ const packagesRafting = [
     title: "Spiti River",
     location: "Spiti Valley, Himachal Pradesh",
     image: imgRafting15,
-    price: "₹25,999",
+    price: "25999",
     grade: "WILD SPITI WATERS",
     DifficultyLevel: "Medium",
     DistanceCovered: "2 km - 19 km",
@@ -1537,7 +1537,7 @@ const packagesRafting = [
     title: "Kameng River",
     location: "Arunachal Pradesh",
     image: imgRafting16,
-    price: "₹23,000",
+    price: "23000",
     grade: "THRILLING ARUNACHAL WATERS",
     DifficultyLevel: "Low",
     DistanceCovered: "5 km - 13 km",
@@ -1637,7 +1637,7 @@ const packagesTrekking = [
     location: "Ladakh, India",
     grade: "EXTREME WINTER TREKKING",
     image: imgTrekking17, // Use the imported image
-    price: "₹19,999",
+    price: "19999",
     description:'The Chadar Trek, an unmissable name on the list of the top treks in India, is ideal for those looking forward to experiencing the thrill of challenging treks. The trek is popular with adventurers because it tests their endurance at every step, with temperatures as low as 35° Celsius, and allows them to witness the ice age dream of walking on glossy ice sheets called "Barf ki Chadar".',
     Itinerary:
     <div>
@@ -1739,7 +1739,7 @@ const packagesTrekking = [
     location: "Kashmir, India",
     grade: "MODERATE TO CHALLENGING",
     image: imgTrekking18,
-    price: "₹12,000",
+    price: "12000",
     description:"The Kashmir Great Lakes Trek, perched at 13,800 ft above sea level, is one of the best places for trekking in India as it treats you with the best views of snow-clad mountains, countless meadows and rocky barren plains.",
     Itinerary:
     <div>
@@ -1801,7 +1801,7 @@ const packagesTrekking = [
     location: "Khumbu Region, Nepal",
     grade: "MODERATE TO CHALLENGING",
     image: imgTrekking19,
-    price: "₹17,000",
+    price: "17000",
     description:"The Everest Base Camp Trek. Located at an altitude of 5,550 metres above sea level, the Everest Base Camp Trek will take you through hidden Gompas, breathtaking mountain views, lush green farmlands, dazzling blue fast-flowing rivers and much more.",
     Itinerary:
     <div>
@@ -1909,7 +1909,7 @@ const packagesTrekking = [
     location: "Himachal Pradesh, India",
     grade: "CHALLENGING ALPINE TREK",
     image: imgTrekking20,
-    price: "₹19,000",
+    price: "19000",
     description:"Situated at an altitude of 15,000 ft, the Buran Ghati Trek has it all - magnificent flora, dense forests, vast green grasslands, glacial lakes, snow-capped peaks, dreamy campsites, gleaming waterfalls and exhilarating passes.",
     Itinerary:
     <div>
@@ -1964,7 +1964,7 @@ const packagesTrekking = [
     location: "Uttarakhand, India",
     grade: "MODERATE ALPINE TREK",
     image: imgTrekking21,
-    price: "₹22,999",
+    price: "22999",
     description:"Ranged at an altitude of 13,000 feet, the Chopta Chandrashila Trek has two routes - from Delhi and Rishikesh. The trek expedition from Delhi is rewarding for high altitude trek lovers as it takes them through lush green forests, snow-capped mountains and the breathtaking views of Nandadevi, Bandarpunch, Trisul, Kedar Peak and Chaukhamba peaks.",
     Itinerary:
     <div>
@@ -2020,7 +2020,7 @@ const packagesTrekking = [
     location: "Darjeeling, West Bengal, India",
     grade: "MODERATE ALPINE TREK",
     image: imgTrekking22,
-    price: "₹25,500",
+    price: "25500",
     description:"Located on the edge of Singalila National Park in West Bengal, the Sandakphu Trek rises to an elevation of 11,930 ft above sea level. It is one of the best places for a trekking trip in Eastern India.",
     Itinerary:
     <div>
@@ -2078,7 +2078,7 @@ const packagesTrekking = [
     location: "Sikkim, India",
     grade: "MODERATE TO CHALLENGING ALPINE TREK",
     image: imgTrekking23,
-    price: "₹20,000",
+    price: "20000",
     description:"An astounding peak that reaches up to 4,000 metres above sea level, the Dzongri Trek is one of the best places for trekking in India for people who do not want to go on long and challenging treks. From lush green forests of Oak, Maple and Rhododendron trees to sparkling streams, this beautiful trek unravels the marvels of nature at every step.",
     Itinerary:
     <div>
@@ -2197,7 +2197,7 @@ const packagesHotels = [
     location: "Arossim Beach,South Goa, India",
     image: imgHotels25, // Use the imported image
     duration: "8 Days & 7 Nights",
-    price: "₹15,000 per Night",
+    price: "15000 per Night",
     grade: "Rating: 5-star Deluxe",
     description:"Nestled in serene south Goa, amidst 1,82,109 m² of lush landscapes & lagoons, the resort offers direct access to the pristine Arossim beach Indo-Portuguese village style architecture Kaya Kalp - The Royal Spa 6 Exotic dining destinations",
     Itinerary:
@@ -2264,7 +2264,7 @@ const packagesHotels = [
     location: "Taj East Gate Road, Agra, India",
     image: imgHotels26,
     duration: "17 Days & 15 Nights",
-    price: "₹10,000 per Night",
+    price: "10000 per Night",
     grade: "Rating: 5-star Deluxe",
     description:"Taj Hotel & Convention Centre, Agra, epitomizes luxury in the heart of the city known for the iconic Taj Mahal. With elegant accommodations, diverse dining options, and state-of-the-art facilities, the hotel offers a blend of modern comfort and cultural charm, making it an ideal destination for both leisure and business travelers.",
     Itinerary:
@@ -2331,7 +2331,7 @@ const packagesHotels = [
     location: "Himachal Pradesh,Manali,India",
     image: imgHotels27,
     duration: "5 Days & 4 Nights",
-    price: "₹12,000 per night",
+    price: "12000 per night",
     grade: "Rating: 5-star Luxury",
     description:"Baragarh Resort & Spa, Manali, a distinguished IHCL SeleQtions property, invites guests to experience the epitome of luxury amidst the breathtaking landscapes of Manali. With opulent accommodations, a rejuvenating spa, and personalized service, the resort promises a memorable escape into the tranquility of the Himalayas",
     Itinerary:
@@ -2398,7 +2398,7 @@ const packagesHotels = [
     location: "Shimla, Himachal Pradesh, India",
     image: imgHotels28,
     duration: "6 Days & 5 Nights",
-    price: " ₹8,000 per night",
+    price: " 8000 per night",
     grade: "Rating: 4-star",
     description:" Woodays Resort is a tranquil retreat nestled in natures embrace, offering a serene getaway. With modern amenities, comfortable accommodations, and lush surroundings, it provides an idyllic escape for those seeking relaxation and rejuvenation.",
     Itinerary:
@@ -2465,7 +2465,7 @@ const packagesHotels = [
     location: "Rhenock, East Sikkim, India",
     image: imgHotels29,
     duration: "4 Days & 3 Nights",
-    price: "₹9,000 per night",
+    price: "9000 per night",
     grade: "Rating: Boutique Luxury",
     description:"Discover indulgence at Rhenock House, a luxury villa that harmoniously blends modern comforts with colonial charm. Nestled in serene surroundings, this exquisite retreat offers an exclusive escape with personalized service, creating an unforgettable experience for discerning travelers.",
     Itinerary:
@@ -2532,7 +2532,7 @@ const packagesHotels = [
     location: "Kahala Phata,Jaisalmer,India",
     image: imgHotels30,
     duration: "8 Days & 7 Nights",
-    price: " ₹18,000 per night",
+    price: " 18000 per night",
     grade: "Rating: 5-star Luxury",
     description:"ESuryagarh in Jaisalmer is a palatial oasis amidst the Thar Desert, where timeless luxury meets Rajasthani grandeur. Immerse yourself in regal hospitality, experience the magic of the golden sands, and revel in the opulence of this iconic heritage hotel.",
     Itinerary:
@@ -2601,7 +2601,7 @@ const packagesHotels = [
     location: "Raja Sansi, Amritsar, Punjab, India",
     image: imgHotels31,
     duration: "5 Days & 3 Nights",
-    price: " ₹11,000 per night",
+    price: " 11000 per night",
     grade: "Rating: 5-star Deluxe",
     description:"Welcomhotel by ITC Hotels in Raja Sansi, Amritsar, offers a seamless blend of modern elegance and traditional charm. With exquisite accommodations and renowned hospitality, it provides a sophisticated retreat near Amritsars cultural and historical attractions.",
     Itinerary:
@@ -2669,7 +2669,7 @@ const packagesHotels = [
     location: "Delhi Jaipur,Rajasthan, India",
     image: imgHotels32,
     duration: "3 Days & 2 Nights",
-    price: " ₹22,000 per night",
+    price: "22000 per night",
     grade: "Rating: 5-star Deluxe",
     description:"The Leela Palace Jaipur is a palatial masterpiece in the Pink City, embodying grandeur and Rajasthani opulence. With regal accommodations, exquisite dining, and impeccable service, this luxury palace hotel offers an unparalleled experience of luxury and splendor in the heart of Jaipur.",
     Itinerary:

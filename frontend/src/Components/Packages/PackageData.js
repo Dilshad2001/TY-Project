@@ -2502,7 +2502,7 @@ export const packagesHotels = [
     location: "Arossim Beach,South Goa, India",
     image: imgHotels25, // Use the imported image
     duration: "8 Days & 7 Nights",
-    price: "₹15,000 per Night",
+    price: "15000 per Night",
     grade: "Rating: 5-star Deluxe",
     description:
       "Nestled in serene south Goa, amidst 1,82,109 m² of lush landscapes & lagoons, the resort offers direct access to the pristine Arossim beach Indo-Portuguese village style architecture Kaya Kalp - The Royal Spa 6 Exotic dining destinations",
@@ -2623,7 +2623,7 @@ export const packagesHotels = [
     location: "Taj East Gate Road, Agra, India",
     image: imgHotels26,
     duration: "17 Days & 15 Nights",
-    price: "₹10,000 per Night",
+    price: "10000 per Night",
     grade: "Rating: 5-star Deluxe",
     description:
       "Taj Hotel & Convention Centre, Agra, epitomizes luxury in the heart of the city known for the iconic Taj Mahal. With elegant accommodations, diverse dining options, and state-of-the-art facilities, the hotel offers a blend of modern comfort and cultural charm, making it an ideal destination for both leisure and business travelers.",
@@ -2749,7 +2749,7 @@ export const packagesHotels = [
     location: "Himachal Pradesh,Manali,India",
     image: imgHotels27,
     duration: "5 Days & 4 Nights",
-    price: "₹12,000 per night",
+    price: "12000 per night",
     grade: "Rating: 5-star Luxury",
     description:
       "Baragarh Resort & Spa, Manali, a distinguished IHCL SeleQtions property, invites guests to experience the epitome of luxury amidst the breathtaking landscapes of Manali. With opulent accommodations, a rejuvenating spa, and personalized service, the resort promises a memorable escape into the tranquility of the Himalayas",
@@ -2873,7 +2873,7 @@ export const packagesHotels = [
     location: "Shimla, Himachal Pradesh, India",
     image: imgHotels28,
     duration: "6 Days & 5 Nights",
-    price: " ₹8,000 per night",
+    price: " 8000 per night",
     grade: "Rating: 4-star",
     description:
       " Woodays Resort is a tranquil retreat nestled in natures embrace, offering a serene getaway. With modern amenities, comfortable accommodations, and lush surroundings, it provides an idyllic escape for those seeking relaxation and rejuvenation.",
@@ -2987,7 +2987,7 @@ export const packagesHotels = [
     location: "Rhenock, East Sikkim, India",
     image: imgHotels29,
     duration: "4 Days & 3 Nights",
-    price: "₹9,000 per night",
+    price: "9000 per night",
     grade: "Rating: Boutique Luxury",
     description:
       "Discover indulgence at Rhenock House, a luxury villa that harmoniously blends modern comforts with colonial charm. Nestled in serene surroundings, this exquisite retreat offers an exclusive escape with personalized service, creating an unforgettable experience for discerning travelers.",
@@ -3103,7 +3103,7 @@ export const packagesHotels = [
     location: "Kahala Phata,Jaisalmer,India",
     image: imgHotels30,
     duration: "8 Days & 7 Nights",
-    price: " ₹18,000 per night",
+    price: " 18000 per night",
     grade: "Rating: 5-star Luxury",
     description:
       "ESuryagarh in Jaisalmer is a palatial oasis amidst the Thar Desert, where timeless luxury meets Rajasthani grandeur. Immerse yourself in regal hospitality, experience the magic of the golden sands, and revel in the opulence of this iconic heritage hotel.",
@@ -3228,7 +3228,7 @@ export const packagesHotels = [
     location: "Raja Sansi, Amritsar, Punjab, India",
     image: imgHotels31,
     duration: "5 Days & 3 Nights",
-    price: " ₹11,000 per night",
+    price: " 11000 per night",
     grade: "Rating: 5-star Deluxe",
     description:
       "Welcomhotel by ITC Hotels in Raja Sansi, Amritsar, offers a seamless blend of modern elegance and traditional charm. With exquisite accommodations and renowned hospitality, it provides a sophisticated retreat near Amritsars cultural and historical attractions.",
@@ -3349,7 +3349,7 @@ export const packagesHotels = [
     location: "Delhi Jaipur,Rajasthan, India",
     image: imgHotels32,
     duration: "3 Days & 2 Nights",
-    price: " ₹22,000 per night",
+    price: " 22000 per night",
     grade: "Rating: 5-star Deluxe",
     description:
       "The Leela Palace Jaipur is a palatial masterpiece in the Pink City, embodying grandeur and Rajasthani opulence. With regal accommodations, exquisite dining, and impeccable service, this luxury palace hotel offers an unparalleled experience of luxury and splendor in the heart of Jaipur.",
@@ -3477,7 +3477,7 @@ export const packagesBus = [
     title: "Goa Discovery: Bus Tour",
     location: "Goa-Calangute Beach-Baga Beach-Dona Paula",
     image: imgBusPackges33,
-    price: "₹5000 per person",
+    price: "5000 per person",
     grade: "Economy Class",
     description:
       "On a captivating journey with our Goa Discovery bus tour package. Immerse yourself in the rich cultural tapestry of Goa as you explore ancient churches vibrant markets and lush spice plantations. Indulge in the breathtaking beauty of sun-kissed beaches and savor the flavors of authentic Goan cuisine.",
@@ -3595,7 +3595,7 @@ export const packagesBus = [
     title: "Agra Heritage Delight",
     location: "Taj Mahal-Agra Fort-Sheesh Mahal-Akbar Tomb",
     image: imgBusPackges34,
-    price: "₹8000 per person",
+    price: "8000 per person",
     grade: "Business Class",
     description:
       "Come with our Agra Heritage Delight package,Witness the ethereal charm of the Taj Mahal at sunrise, delve into the rich history of Agra Fort, and stroll through the vibrant local markets Agra Heritage Delight promises an unforgettable blend of history, architecture, and the warm embrace of Agras enchanting heritage.",
@@ -3708,7 +3708,7 @@ export const packagesBus = [
     title: "Jogni Waterfall Tour",
     location: "Solang Valley-Manikaran-Bhrigu Lake",
     image: imgBusPackges35,
-    price: "₹10,000 per person",
+    price: "10000 per person",
     grade: "Premium Class",
     description:
       " On a thrilling  Jogni Waterfall Adventure Tour, immersing yourself in the natural beauty of the serene Jogni Waterfall Road. Experience the joy of a guided trek to the mesmerizing waterfall,and unwind in comfortable accommodations. This curated package promises a perfect blend of exploration and relaxation in the heart of nature.",
@@ -3818,7 +3818,7 @@ export const packagesBus = [
     title: "Shaily Peak Tour",
     location: "Chail-Kali Bari Temple-Kufri",
     image: imgBusPackges36,
-    price: "₹12,000 per person",
+    price: "12000 per person",
     grade: "Sleeper Bus",
     description:
       "On a mesmerizing journey to Shaily Peak, Shimla, with our exclusive bus tour packages. Enjoy a day excursion filled with panoramic views, guided tours, and a delightful packed lunch. For a weekend retreat, experience two days of exploration, evening bonfires, and cultural activities, staying at a cozy hotel near Shaily Peak.",
@@ -3929,7 +3929,7 @@ export const packagesBus = [
     title: "Buddha Park Tour",
     location: "Gangtok-Himalayan Zoological Park-Pelling",
     image: imgBusPackges37,
-    price: "₹15,000 per person",
+    price: "15000 per person",
     grade: "Double Decker Bus",
     description:
       'On a soul-stirring journey with our "Enchanting Buddha Park Discovery Tour." Witness the awe-inspiring 130-foot Buddha statue amidst the tranquil surroundings of Sikkim. Immerse yourself in spirituality as you explore the beautiful gardens and nearby Rumtek Monastery, creating memories that resonate with peace and serenity.',
@@ -4049,7 +4049,7 @@ export const packagesBus = [
     title: "Bada Bagh luxury Bus Tour",
     location: "Kuldhara-Gadisar Lake-Kuldhara",
     image: imgBusPackges38,
-    price: "₹25,000 per person",
+    price: "25000 per person",
     grade: " VIP Class",
     description:"Immerse yourself in the rich history of Jaisalmer Fort and explore The highlight of the trip is the visit to Bada Bagh, a historical garden complex with intricately designed cenotaphs, offering a serene retreat amidst the desert landscape.It is a perfect blend of cultural exploration and natural beauty, promising an unforgettable experience in the heart of Rajasthan.",
     Itinerary:
@@ -4147,7 +4147,7 @@ export const packagesBus = [
     title: "Golden Temple & City Tour",
     location: "Wagah border-Akal Takht-Hall Bazaar",
     image: imgBusPackges39,
-    price: "₹30,000 per person",
+    price: "30000 per person",
     grade: "Luxury Bus",
     description:"On a soulful journey to explore the divine beauty of the Golden Temple in Amritsar with our meticulously curated luxury bus tour package. Experience the spiritual essence, architectural brilliance, and cultural richness of this revered Sikh pilgrimage site. This package is designed for those seeking a blend of spiritual rejuvenation and luxury travel.",
     Itinerary:
@@ -4245,7 +4245,7 @@ export const packagesBus = [
     title: "Jal Mahal Tour",
     location: "Hawa Mahal-Nahargarh Fort-Jaipur Zoo",
     image: imgBusPackges40,
-    price: "₹35,000 per person",
+    price: "35000 per person",
     grade: "V-VIP Class",
     description:"Experience the royal charm of Jaipur with our meticulously designed Luxury Bus Package for the Jal Mahal Discovery Tour. Immerse yourself in the architectural splendor and historical significance of Jal Mahal, surrounded by the serene waters of Man Sagar Lake. This tour is tailored for those seeking a regal and opulent exploration of Jaipurs cultural heritage.",
     Itinerary:
@@ -4346,7 +4346,7 @@ export const packagesTrain = [
     title: "Mumbai to Goa Express",
     location: "Mumbai - Goa ",
     image: imgTrainPackage41,
-    price: "₹20,000 per person",
+    price: "20000 per person",
     duration: "8 days & 2 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The bustling city of Mumbai to the sun-soaked beaches of Goa with our specially curated Train Expedition package. Experience the thrill of traversing the picturesque Western Ghats, witness the changing landscapes, and arrive in Goa ready for a memorable vacation filled with sun, sand, and relaxation.",
@@ -4431,7 +4431,7 @@ export const packagesTrain = [
     title: "Mumbai to Agra Express",
     location: "Mumbai  -  Agra",
     image: imgTrainPackage42,
-    price: "₹25,000 per person",
+    price: "25000 per person",
     duration: "7 days & 2 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Train Expedition package. Immerse yourself in the cultural richness, witness architectural marvels, and experience the historical grandeur of Agra, home to the iconic Taj Mahal.",
@@ -4536,7 +4536,7 @@ export const packagesTrain = [
     title: "Mumbai to Manali Express",
     location: "Mumbai-Manali",
     image: imgTrainPackage43,
-    price: "₹22,000 per person",
+    price: "22000 per person",
     duration: "8 days & 3 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The train journey from the vibrant city of Mumbai to the picturesque landscapes of Manali with our specially crafted Express Train package. Witness the breathtaking scenery, traverse through mountainous terrains, and arrive in Manali ready to explore the serene beauty of the Himalayas.",
@@ -4623,7 +4623,7 @@ export const packagesTrain = [
     title: "Gujarat to Shimla Express",
     location: "Gujarat to Shimla",
     image: imgTrainPackage44,
-    price: "₹20,000 per person",
+    price: "20000 per person",
     duration: "8 days & 2 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The enchanting landscapes of Shimla with our carefully curated Himalayan Explorer Train Tour. Traverse through diverse terrains, witness the beauty of the Western Ghats and the Himalayas, and arrive in Shimla ready to immerse yourself in the serene mountain retreat.",
@@ -4710,7 +4710,7 @@ export const packagesTrain = [
     title: "Mumbai to Sikkim superFast Express",
     location: "Mumbai to Sikkim ",
     image: imgTrainPackage45,
-    price: "₹26,000 per person",
+    price: "26000 per person",
     duration: "5 days & 2 Nights",
     grade: "Second Class-Luxury Classes",
     description:"On an awe-inspiring train journey from the bustling city of Mumbai to the serene landscapes of Sikkim with our meticulously crafted Himalayan Expedition package. Traverse through diverse terrains, witness the beauty of the Eastern Ghats and the Himalayas, and arrive in Sikkim ready to explore the enchanting Himalayan kingdom.",
@@ -4797,7 +4797,7 @@ export const packagesTrain = [
     title: "Uttar Pradesh to Jaisalmer Desert Odyssey",
     location: "Uttar Pradesh to Jaisalmer",
     image: imgTrainPackage46,
-    price: "₹30,000 per person",
+    price: "30000 per person",
     duration: "8 days & 4 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The culturally rich state of Uttar Pradesh to the golden sands of Jaisalmer with our thoughtfully curated Desert Odyssey Train Tour. Traverse through the historical landscapes, witness the cultural tapestry of Rajasthan, and arrive in Jaisalmer ready to immerse yourself in the grandeur of the Thar Desert.",
@@ -4883,7 +4883,7 @@ export const packagesTrain = [
     title: "Mumbai to Amritsar superFast Express",
     location: "Mumbai to Amritsar",
     image: imgTrainPackage47,
-    price: "₹35,000 per person",
+    price: "35000 per person",
     duration: "8 days & 2 Nights",
     grade: "Second Class-Luxury Classes",
     description:"On a soulful train journey from the bustling city of Mumbai to the spiritual heart of Punjab, Amritsar, with our carefully curated Spiritual Journey by Train package. Experience the cultural richness, witness religious fervor, and arrive in Amritsar ready to immerse yourself in the divine atmosphere.",
@@ -4969,7 +4969,7 @@ export const packagesTrain = [
     title: "Hyderabad to Jaipur Royal Heritage Express",
     location: "Hyderabad to Jaipur",
     image: imgTrainPackage48,
-    price: "₹40,000 per person",
+    price: "40000 per person",
     duration: "5 days & 3 Nights",
     grade: "Second Class-Luxury Classes",
     description:"The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Train Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.",
@@ -5061,7 +5061,7 @@ export const packagesFlight = [
     title: "Mumbai to Goa Vistara-Flights",
     location: "Mumbai - Goa ",
     image: imgFlightPackage49,
-    price: "₹15,000 per person",
+    price: "15000 per person",
     grade: "economy-first class.",
     description:"Indulge in a seamless and enjoyable journey from the bustling city of Mumbai to the sun-kissed beaches of Goa with our carefully crafted Blissful Getaway Flight Package. Escape the routine, relax on the sandy shores, and immerse yourself in the vibrant culture of Goa.",
     Itinerary:
@@ -5120,7 +5120,7 @@ export const packagesFlight = [
     title: "Mumbai to Agra Indigo-Flights",
     location: "Mumbai-Agra",
     image: imgFlightPackage50,
-    price: "₹20,000 per person",
+    price: "20000 per person",
     grade: "economy-first class.",
     description:"Embark on a fascinating journey from the bustling city of Mumbai to the historical city of Agra with our specially curated Heritage Flight Expedition package. Immerse yourself in the architectural marvels, witness the iconic Taj Mahal, and experience the rich cultural heritage of Agra.",
     Itinerary:
@@ -5190,7 +5190,7 @@ export const packagesFlight = [
     title: "Mumbai to Manali Air-India Flights",
     location: "Mumbai to Manali",
     image: imgFlightPackage51,
-    price: "₹25,000 per person",
+    price: "25000 per person",
     grade: "economy-first class.",
     description:" on a thrilling journey from the bustling city of Mumbai to the serene landscapes of Manali with our carefully crafted Alpine Escape Flight Package. Immerse yourself in the pristine beauty of the Himalayas, enjoy adventure activities, and experience the tranquility of Manali..",
     Itinerary:
@@ -5250,7 +5250,7 @@ export const packagesFlight = [
     title: "Gujarat to Shimla SpiceJet-Flights",
     location: "Gujarat to Shimla ",
     image: imgFlightPackage52,
-    price: "₹22,000 per person",
+    price: "22000 per person",
     grade: "economy-first class.",
     description:" the vibrant state of Gujarat to the captivating landscapes of Shimla with our carefully curated Mountain Escape Flight Package. Immerse yourself in the Himalayan charm, explore colonial architecture, and experience the serene beauty of Shimla.",
     Itinerary:
@@ -5310,7 +5310,7 @@ export const packagesFlight = [
     title: "Mumbai to Sikkim AirAsia-Flights",
     location: "Mumbai to Sikkim",
     image: imgFlightPackage53,
-    price: "₹28,000 per person",
+    price: "28000 per person",
     grade: "economy-first class.",
     description:"The bustling city of Mumbai to the enchanting landscapes of Sikkim with our carefully crafted Himalayan Expedition Flight Package. Immerse yourself in the tranquility of the Eastern Himalayas, explore monasteries, and witness the mesmerizing beauty of Sikkim.",
     Itinerary:
@@ -5370,7 +5370,7 @@ export const packagesFlight = [
     title: "Uttar Pradesh to Jaisalmer GoAir-Flights ",
     location: "Uttar Pradesh to Jaisalmer",
     image: imgFlightPackage54,
-    price: "₹32,000 per person",
+    price: "32000 per person",
     grade: "economy-first class.",
     description:"On a magical journey from the historic state of Uttar Pradesh to the golden sands of Jaisalmer with our carefully curated Desert Odyssey Flight Package. Immerse yourself in the royal grandeur of Rajasthan, explore the Thar Desert, and witness the vibrant culture of Jaisalmer.",
     Itinerary:
@@ -5430,7 +5430,7 @@ export const packagesFlight = [
     title: "Mumbai to Amritsar Air India Express-Flights",
     location: "Mumbai - Amritsar",
     image: imgFlightPackage55,
-    price: "₹20,000 per person1500",
+    price: "20000 per person",
     grade: "economy-first class.",
     description:"The city of Mumbai to the sacred land of Amritsar with our carefully curated Spiritual Journey Flight Package. Immerse yourself in the divine ambiance of the Golden Temple, explore historical landmarks, and experience the rich Sikh culture of Amritsar.",
     Itinerary:
@@ -5491,7 +5491,7 @@ export const packagesFlight = [
     title: "Hyderabad to Jaipur Alliance Air-Flights",
     location: "Hyderabad - Jaipur",
     image: imgFlightPackage56,
-    price: "₹45,000 per person",
+    price: "45000 per person",
     grade: "economy-first class.",
     description:"The regal charm and cultural richness of Jaipur, the Pink City, with our exclusive Royal Heritage Flight Journey from Hyderabad to Jaipur. Immerse yourself in the grandeur of Rajasthans capital city, explore its majestic forts and palaces, and revel in the vibrant culture and traditions.",
     Itinerary:
