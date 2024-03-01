@@ -3,21 +3,18 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './BookNow.css'
 
-const BookingPage = () => {
+const BookNow = () => {
   const location = useLocation();
-  const { bookingInfo, totalAmount, packageItem } = location.state || {};
+  const { bookingInfo, calculatedTotalAmount,simplifiedPackageItem} = location.state || {};
 
   useEffect(() => {
     console.log('Booking Info:', bookingInfo);
-    console.log('Total Amount:', totalAmount);
-    console.log('Package Item:', packageItem);
-  }, [bookingInfo, totalAmount, packageItem]);
+    console.log('Total Amount:', calculatedTotalAmount);
+    console.log('PaymentItem',simplifiedPackageItem)
+  }, [bookingInfo, calculatedTotalAmount,simplifiedPackageItem]);
 
   const [bookingDetails, setBookingDetails] = useState({
-    name: '',
-    email: '',
-    trekkingPackage: '',
-    paymentAmount: totalAmount || 0, // Use the passed totalAmount or default to 0
+    paymentAmount: calculatedTotalAmount || 0, // Use the passed totalAmount or default to 0
     paymentStatus: false, // Track payment status
   });
 
@@ -67,26 +64,23 @@ const BookingPage = () => {
       <h2>Complete Your Adventure Booking</h2>
       <form>
         {/* Display the received package details */}
-        {packageItem ? (
+        {simplifiedPackageItem ? (
           <>
         <h3>Package Details:</h3>
-        <p>Title: {packageItem.title}</p>
+        <p>Title: {simplifiedPackageItem.title}</p>
         {/* Add other package details as needed */}
         </>
         ) : null}
         {/* Allow user to update their details if needed */}
         <h3>Your Details:</h3>
-        <label>Name:</label>
-        <input type="text" name="name" value={bookingDetails.name} onChange={handleInputChange} />
+        <p>Name: {bookingInfo.name}</p>
 
-        <label>Email:</label>
-        <input type="email" name="email" value={bookingDetails.email} onChange={handleInputChange} />
-
-        <label>Trekking Package:</label>
+        <p>Email: {bookingInfo.email}</p>
+        <label>Package:</label>
         <input
           type="text"
           name="trekkingPackage"
-          value={bookingDetails.trekkingPackage || (packageItem ? packageItem.title : '')}
+          value={bookingDetails.trekkingPackage || (simplifiedPackageItem ? simplifiedPackageItem.title : '')}
           readOnly
         />
 
@@ -113,4 +107,4 @@ const BookingPage = () => {
 };
   
 
-export default BookingPage;
+export default BookNow;

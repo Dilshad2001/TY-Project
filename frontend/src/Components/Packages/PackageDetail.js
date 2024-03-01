@@ -80,18 +80,21 @@ const PackageDetail = () => {
       alert('Invalid package details. Please check the price.');
       return;
     }
-    const price = parseFloat(packageItem.price);
+    const priceof = parseInt(packageItem.price);
+    console.log(priceof)
     const numberOfPeople = parseInt(bookingInfo.numberOfPeople);
 
     console.log('packageItem:', packageItem);
-    console.log('price:', price);
+    console.log('price:', priceof);
     console.log('numberOfPeople:', numberOfPeople);
+    
 
-    if (isNaN(price) || isNaN(numberOfPeople) || price <= 0 || numberOfPeople <= 0) {
+    if ( packageItem.price <= 0 || numberOfPeople <= 0) {
       alert('Invalid package details. Please check the price and number of people.');
       return;
     }
-    const calculatedTotalAmount = price * numberOfPeople;
+    
+    const calculatedTotalAmount = priceof*numberOfPeople;
 
     if (isNaN(calculatedTotalAmount)) {
       alert('Invalid calculation. Please check package details.');
@@ -100,10 +103,21 @@ const PackageDetail = () => {
 
     console.log('calculatedTotalAmount:', calculatedTotalAmount);
 
-  
+    const simplifiedPackageItem = {
+      id: packageItem.id,
+      price: packageItem.price,
+      location: packageItem.location,
+      title: packageItem.title,
+      grade: packageItem.grade,
+      duration: packageItem.duration
+
+      // Add other necessary properties
+    };
+
+    console.log(simplifiedPackageItem)
     setTotalAmount(calculatedTotalAmount); 
     setConfirmationVisible(true);
-    navigate(`/booking/${id}`, { state: { bookingInfo, totalAmount: calculatedTotalAmount, packageItem } });
+    navigate(`/Book-Now`, { state: { bookingInfo, calculatedTotalAmount, simplifiedPackageItem } });
   };
   
 

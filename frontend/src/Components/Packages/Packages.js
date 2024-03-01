@@ -92,7 +92,7 @@ const packagesTravelling = [
     title: "Goa Beach Paradise",
     location: "Goa",
     grade: "BEACH RELAX",
-    price: "₹15,000",
+    price: "15000",
     description:"the new moon, Goas beaches are known the world over. Fringed by swaying palm and coconut trees with cool and comfortable shacks offering a variety of refreshments, Goas 103 km coastline is blessed with the most enchanting beaches lapped by the Arabian Sea.s",
     Itinerary: 
       <div>
