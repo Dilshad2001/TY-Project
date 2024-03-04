@@ -22,15 +22,40 @@ const BookNow = () => {
   
 
   const handlePayment = () => {
-    // In a real application, you would integrate with a secure payment gateway here
-    simulateEmailConfirmation(); // Simulate sending confirmation email
+    const bookingData = {
+      title: simplifiedPackageItem.title,
+      name: bookingInfo.name,
+      email: bookingInfo.email,
+      numberOfPeople: numberOfPeople,
+      packageTitle: simplifiedPackageItem.title, // Include packageTitle
+      paymentAmount: calculatedTotalAmount,
+    };
+  
+    fetch('/api/bookings', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(bookingData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Booking submitted successfully:', data);
+        setBookingDetails((prevDetails) => ({ ...prevDetails, paymentStatus: true }));
+        simulateEmailConfirmation();
+      })
+      .catch((error) => {
+        console.error('Error submitting booking:', error);
+        alert('Failed to submit booking. Please try again.');
+      });
   };
+  
+  
 
   const simulatePaymentConfirmation = () => {
     // Simulate processing payment using a dummy payment API
     // Assuming payment is successful, update payment status and send email confirmation
     setBookingDetails((prevDetails) => ({ ...prevDetails, paymentStatus: true }));
-    simulateEmailConfirmation();
     simulateEmailConfirmation();
   };
 
