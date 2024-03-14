@@ -1,27 +1,38 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import './BookNow.css'
+import React from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import "./BookNow.css";
 
 const BookNow = () => {
   const location = useLocation();
-  const { bookingInfo, calculatedTotalAmount,simplifiedPackageItem,numberOfPeople} = location.state || {};
+
+  const {
+    bookingInfo,
+    calculatedTotalAmount,
+    simplifiedPackageItem,
+    numberOfPeople,
+  } = location.state || {};
 
   useEffect(() => {
-    console.log('Booking Info:', bookingInfo);
-    console.log('Total Amount:', calculatedTotalAmount);
-    console.log('PaymentItem',simplifiedPackageItem)
-    console.log('Number of people',numberOfPeople)
-  }, [bookingInfo, calculatedTotalAmount,simplifiedPackageItem,numberOfPeople]);
+    console.log("Booking Info:", bookingInfo);
+    console.log("Total Amount:", calculatedTotalAmount);
+    console.log("PaymentItem", simplifiedPackageItem);
+    console.log("Number of people", numberOfPeople);
+  }, [
+    bookingInfo,
+    calculatedTotalAmount,
+    simplifiedPackageItem,
+    numberOfPeople,
+  ]);
 
   const [bookingDetails, setBookingDetails] = useState({
     paymentAmount: calculatedTotalAmount || 0, // Use the passed totalAmount or default to 0
     paymentStatus: false, // Track payment status
   });
 
-  
-
   const handlePayment = () => {
+    window.location.href = '/payment-Gateway';
+
     const bookingData = {
       title: simplifiedPackageItem.title,
       name: bookingInfo.name,
@@ -30,56 +41,63 @@ const BookNow = () => {
       packageTitle: simplifiedPackageItem.title, // Include packageTitle
       paymentAmount: calculatedTotalAmount,
     };
-  
-    fetch('/api/bookings', {
-      method: 'POST',
+
+    fetch("/api/bookings", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(bookingData),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Booking submitted successfully:', data);
-        setBookingDetails((prevDetails) => ({ ...prevDetails, paymentStatus: true }));
+        console.log("Booking submitted successfully:", data);
+        setBookingDetails((prevDetails) => ({
+          ...prevDetails,
+          paymentStatus: true,
+        }));
         simulateEmailConfirmation();
       })
       .catch((error) => {
-        console.error('Error submitting booking:', error);
-        alert('Failed to submit booking. Please try again.');
+        console.error("Error submitting booking:", error);
+        alert("Failed to submit booking. Please try again.");
       });
   };
-  
-  
 
   const simulatePaymentConfirmation = () => {
     // Simulate processing payment using a dummy payment API
     // Assuming payment is successful, update payment status and send email confirmation
-    setBookingDetails((prevDetails) => ({ ...prevDetails, paymentStatus: true }));
+    setBookingDetails((prevDetails) => ({
+      ...prevDetails,
+      paymentStatus: true,
+    }));
     simulateEmailConfirmation();
   };
-
   const simulateEmailConfirmation = () => {
     // Simulate sending a confirmation email using a dummy email API
-    fetch('https://dummy-email-api.com/send', {
-      method: 'POST',
+    fetch("https://dummy-email-api.com/send", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         to: bookingDetails.email,
-        subject: 'Package Booking Confirmation',
+        subject: "Package Booking Confirmation",
         body: `Dear ${bookingDetails.name},\n\nThank you for booking the ${bookingDetails.trekkingPackage} adventure! Your payment of $${bookingDetails.paymentAmount} has been received.\n\nEnjoy your trek!\n\nBest regards,\nThe Adventure Team`,
       }),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Email confirmation sent:', data);
-        alert('Payment successful! Confirmation email sent to your registered email.');
+        console.log("Email confirmation sent:", data);
+        alert(
+          "Payment successful! Confirmation email sent to your registered email."
+        );
       })
       .catch((error) => {
-        console.error('Error sending email confirmation:', error);
-        alert('Payment successful! Unable to send confirmation email at the moment.');
+        console.error("Error sending email confirmation:", error);
+        alert(
+          "Payment successful! Unable to send confirmation email at the moment."
+        );
       });
   };
   return (
@@ -89,10 +107,10 @@ const BookNow = () => {
         {/* Display the received package details */}
         {simplifiedPackageItem ? (
           <>
-        <h3>Package Details:</h3>
-        <p>Title: {simplifiedPackageItem.title}</p>
-        {/* Add other package details as needed */}
-        </>
+            <h3>Package Details:</h3>
+            <p>Title: {simplifiedPackageItem.title}</p>
+            {/* Add other package details as needed */}
+          </>
         ) : null}
         {/* Allow user to update their details if needed */}
         <h3>Your Details:</h3>
@@ -104,7 +122,10 @@ const BookNow = () => {
         <input
           type="text"
           name="Package"
-          value={bookingDetails.trekkingPackage || (simplifiedPackageItem ? simplifiedPackageItem.title : '')}
+          value={
+            bookingDetails.trekkingPackage ||
+            (simplifiedPackageItem ? simplifiedPackageItem.title : "")
+          }
           readOnly
         />
 
@@ -123,12 +144,14 @@ const BookNow = () => {
 
       {bookingDetails.paymentStatus && (
         <div>
-          <p>Payment Successful! Confirmation details sent to your email and phone.</p>
+          <p>
+            Payment Successful! Confirmation details sent to your email and
+            phone.
+          </p>
         </div>
       )}
     </div>
   );
 };
-  
 
 export default BookNow;

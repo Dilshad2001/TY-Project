@@ -14,6 +14,8 @@ import BookNow from  './Components/Book Now/BookNow'
 import BusPackage from './Components/Packages/Bus/BusPackage';
 import TrainPackage from './Components/Packages/Train/TrainPackage';
 import FlightPackage from './Components/Packages/Flight/FlightPackage';
+import PaymentGateway from './Components/PaymentGateway/PaymentGateway';
+import PaymentConfirmation from './Components/PaymentGateway/PaymentConfirmation';
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
         <Route path='/Trekking' element={<Trekking />} />
         <Route path='/About' element={<About />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path="/payment" component={PaymentGateway} />
+        <Route path="/confirmation" component={PaymentConfirmation} />
     
       </Routes>
       
